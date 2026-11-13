@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "member": "replace-with-lowercase-name",
+  "target_repository": "Lelevinson/rosa-contexts",
+  "source_repository": "owner/rosa-research",
+  "expected_source_branch": "replace-with-authoritative-branch",
+  "protocol_version": 1,
+  "include": [
+    "research/START_HERE.md",
+    "research/ACTIVE_STATE.md",
+    "research/STUDY_INDEX.md"
+  ],
+  "important_missing_context": []
+}
