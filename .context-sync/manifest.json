@@ -48,7 +48,40 @@
     "research/studies/design_investigations_20261108_20261110/ROSA_LLM_Decision_Optimization_Investigation_2026-11-10.md",
     "research/studies/design_investigations_20261108_20261110/ROSA_Mission_B_Code_Grounded_Investigation_2026-11-09.md",
     "research/studies/design_investigations_20261108_20261110/ROSA_Mission_D_Autonomous_Algorithm_Development_2026-11-09.md",
-    "research/studies/design_investigations_20261108_20261110/ROSA_Mixed_Graph_Read_Admission_2026-11-10.md"
+    "research/studies/design_investigations_20261108_20261110/ROSA_Mixed_Graph_Read_Admission_2026-11-10.md",
+    "research/studies/action_narration_20261111/PROTOCOL.md",
+    "research/studies/autotool_iteration_20261112/PROTOCOL_AMENDMENTS.md",
+    "research/studies/autotool_iteration_20261112/PROTOCOL_FROZEN.md",
+    "research/studies/capability_discovery_20261110/PROTOCOL.md",
+    "research/studies/cpaw_prototype_20261110/PROTOCOL.md",
+    "research/studies/cpaw_prototype_20261110/PROTOCOL_AUTHORIZATION.md",
+    "research/studies/cpaw_prototype_20261110/PROTOCOL_CALIBRATED.md",
+    "research/studies/cpaw_prototype_20261110/PROTOCOL_COLD.md",
+    "research/studies/cpaw_prototype_20261110/PROTOCOL_FINAL.md",
+    "research/studies/cpaw_prototype_20261110/PROTOCOL_UNRESTRICTED.md",
+    "research/studies/gpt_coverage_investigation_20261111/PROTOCOL.md",
+    "research/studies/headroom_diagnostic_20261112/CODEBOOK.md",
+    "research/studies/headroom_diagnostic_20261112/PROTOCOL_STAGE0.md",
+    "research/studies/headroom_diagnostic_20261112/PROTOCOL_STAGE1.md",
+    "research/studies/headroom_diagnostic_20261112/PROTOCOL_STAGE1C.md",
+    "research/studies/headroom_diagnostic_20261112/PROTOCOL_STAGE2A.md",
+    "research/studies/headroom_diagnostic_20261112/PROTOCOL_STAGE3B.md",
+    "research/studies/headroom_diagnostic_20261112/PROTOCOL_STAGE3C.md",
+    "research/studies/headroom_diagnostic_20261112/PROTOCOL_STAGE3D.md",
+    "research/studies/headroom_diagnostic_20261112/RELABEL_AGREEMENT.md",
+    "research/studies/headroom_diagnostic_20261112/REPORT_STAGE3B.md",
+    "research/studies/headroom_diagnostic_20261112/REPORT_STAGE3C.md",
+    "research/studies/headroom_diagnostic_20261112/STAGE0_TABLES.md",
+    "research/studies/headroom_diagnostic_20261112/STAGE1C_RELABEL.md",
+    "research/studies/headroom_diagnostic_20261112/STAGE1C_TABLES.md",
+    "research/studies/headroom_diagnostic_20261112/STAGE1_TABLES.md",
+    "research/studies/headroom_diagnostic_20261112/STAGE2A_TABLES.md",
+    "research/studies/headroom_diagnostic_20261112/STAGE3B_LOG.md",
+    "research/studies/headroom_diagnostic_20261112/STAGE3B_TABLES.md",
+    "research/studies/headroom_diagnostic_20261112/STAGE3C_BLIND_SHEET.md",
+    "research/studies/headroom_diagnostic_20261112/STAGE3C_TABLES.md",
+    "research/studies/headroom_diagnostic_20261112/STAGE3_TABLES.md",
+    "research/studies/native_read_investigation_20261111/PROTOCOL.md"
   ],
   "important_missing_context": [
     "research/.local/WORKSPACE_MAP.md is machine-specific and excluded.",
@@ -62,8 +95,8 @@
   ],
   "source_branch": "research/capability-discovery-20261110",
   "source_commit_sha": "b12b1bd606229f8cbcb1b32681850bf164f84d77",
-  "synchronized_at_utc": "2026-11-13T23:53:25Z",
-  "protocol_commit": "f3215a78c8174398a812d47ee84ac592083104ab",
+  "synchronized_at_utc": "2026-11-14T08:15:37Z",
+  "protocol_commit": "26ac7bd9bd65abeb5ff672c045f209e602a0af9e",
   "source_commit_note": "source_commit_sha identifies Git HEAD only; per-file hashes and source_git_state show whether each published byte exists in that commit.",
   "files": [
     {
@@ -79,8 +112,8 @@
     },
     {
       "path": "research/ACTIVE_STATE.md",
-      "source_sha256": "90ae2dc81effe5b6c481c7cb746af2d66935c3e9e3af00fb6cc984b9fd9412b5",
-      "published_sha256": "90ae2dc81effe5b6c481c7cb746af2d66935c3e9e3af00fb6cc984b9fd9412b5",
+      "source_sha256": "2045b600da6e7c7b253f46e1db74e1b60bca737b0b6cf748693174f88abd3958",
+      "published_sha256": "2045b600da6e7c7b253f46e1db74e1b60bca737b0b6cf748693174f88abd3958",
       "source_git_state": "ignored",
       "source_commit_contains_bytes": false,
       "redactions": {
@@ -90,8 +123,8 @@
     },
     {
       "path": "research/STUDY_INDEX.md",
-      "source_sha256": "6570354017b718374f7b666e7cf88c57a98983e62391481ed4686e8da707a9b3",
-      "published_sha256": "1f4523e015c472d47b764b3353d8faa79d94cd9c20e3ddf2422042c2757cfb22",
+      "source_sha256": "71afdc44a967eda9aa48693cc4be00690b6c583721cc76fbfdbfa405e0529eef",
+      "published_sha256": "0f579e1d68aca2d54760a436ce2446e83c101a83ea80953c48d479bd68431eab",
       "source_git_state": "ignored",
       "source_commit_contains_bytes": false,
       "redactions": {
@@ -112,8 +145,8 @@
     },
     {
       "path": "research/CONTEXT_DIGEST.md",
-      "source_sha256": "0e2adf560f7347122ba21247660bc9abcd4855f470e46f01fa7b7fb56ef2daa7",
-      "published_sha256": "0e2adf560f7347122ba21247660bc9abcd4855f470e46f01fa7b7fb56ef2daa7",
+      "source_sha256": "cce68277c70d4f4691e743c1bda6e459c6b05dcc68c4da35119f712a87aa053e",
+      "published_sha256": "cce68277c70d4f4691e743c1bda6e459c6b05dcc68c4da35119f712a87aa053e",
       "source_git_state": "ignored",
       "source_commit_contains_bytes": false,
       "redactions": {
@@ -354,8 +387,8 @@
     },
     {
       "path": "research/studies/headroom_diagnostic_20261112/DECISION_LEDGER.md",
-      "source_sha256": "8d2c3c96fc3517692bd1688b1cf0c5e4c8c2367c96252d6fbf47628ed181330f",
-      "published_sha256": "8d2c3c96fc3517692bd1688b1cf0c5e4c8c2367c96252d6fbf47628ed181330f",
+      "source_sha256": "a30f0737285a2ae2ec0b22664dad758cf4c841aa040a4c4120a18230b18226ca",
+      "published_sha256": "a30f0737285a2ae2ec0b22664dad758cf4c841aa040a4c4120a18230b18226ca",
       "source_git_state": "ignored",
       "source_commit_contains_bytes": false,
       "redactions": {
@@ -532,6 +565,369 @@
       "path": "research/studies/design_investigations_20261108_20261110/ROSA_Mixed_Graph_Read_Admission_2026-11-10.md",
       "source_sha256": "f76f9cd217a911e234bf238d06ed3ad8be5835ca46641b28fbe912db83e7e130",
       "published_sha256": "f76f9cd217a911e234bf238d06ed3ad8be5835ca46641b28fbe912db83e7e130",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/action_narration_20261111/PROTOCOL.md",
+      "source_sha256": "3aad81e4ed4511fb0ffeac1a68ea70755b3759245c89a3ec1f81a539bb753cbe",
+      "published_sha256": "3aad81e4ed4511fb0ffeac1a68ea70755b3759245c89a3ec1f81a539bb753cbe",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/autotool_iteration_20261112/PROTOCOL_AMENDMENTS.md",
+      "source_sha256": "cce5073aba2c9a403ad6a444da64f966af8ddb454347a306e957a3ea12a586c3",
+      "published_sha256": "cce5073aba2c9a403ad6a444da64f966af8ddb454347a306e957a3ea12a586c3",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/autotool_iteration_20261112/PROTOCOL_FROZEN.md",
+      "source_sha256": "723e5fd65938b6c3bbaa6f7ff8c353d11af04af1d147882a41877452dd8ec465",
+      "published_sha256": "723e5fd65938b6c3bbaa6f7ff8c353d11af04af1d147882a41877452dd8ec465",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/capability_discovery_20261110/PROTOCOL.md",
+      "source_sha256": "b5e55c88832c4ab0fb8eb6e9806aad718f46dd1bee573ad7920334b8ff3c4b4e",
+      "published_sha256": "b5e55c88832c4ab0fb8eb6e9806aad718f46dd1bee573ad7920334b8ff3c4b4e",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/cpaw_prototype_20261110/PROTOCOL.md",
+      "source_sha256": "36528c18fe6071c3ade5bba317c2b4fbbe90fb6d6550fafdcf18d5ffeae00aeb",
+      "published_sha256": "36528c18fe6071c3ade5bba317c2b4fbbe90fb6d6550fafdcf18d5ffeae00aeb",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/cpaw_prototype_20261110/PROTOCOL_AUTHORIZATION.md",
+      "source_sha256": "b101f3f7ca3e9dab60cc0cc7cb1792d23e259943c954326d32f19854861e304f",
+      "published_sha256": "b101f3f7ca3e9dab60cc0cc7cb1792d23e259943c954326d32f19854861e304f",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/cpaw_prototype_20261110/PROTOCOL_CALIBRATED.md",
+      "source_sha256": "e3e746b604b789a99631d993bf2383cfbf81c0c5c422fa2a2cfcf78148a016d8",
+      "published_sha256": "e3e746b604b789a99631d993bf2383cfbf81c0c5c422fa2a2cfcf78148a016d8",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/cpaw_prototype_20261110/PROTOCOL_COLD.md",
+      "source_sha256": "3eb9e0f0fd8c8520985449c78c261398254692dd5d8e5cd819c571e191cef7d4",
+      "published_sha256": "3eb9e0f0fd8c8520985449c78c261398254692dd5d8e5cd819c571e191cef7d4",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/cpaw_prototype_20261110/PROTOCOL_FINAL.md",
+      "source_sha256": "acc4b93128415945be6c10cee3b2caefa0b2afdc88ae4feba8c62daab0177fe2",
+      "published_sha256": "acc4b93128415945be6c10cee3b2caefa0b2afdc88ae4feba8c62daab0177fe2",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/cpaw_prototype_20261110/PROTOCOL_UNRESTRICTED.md",
+      "source_sha256": "27a6faf9150af63ef368a4c588ae6554c4280d655292698594e136f43f904c11",
+      "published_sha256": "27a6faf9150af63ef368a4c588ae6554c4280d655292698594e136f43f904c11",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/gpt_coverage_investigation_20261111/PROTOCOL.md",
+      "source_sha256": "5f565b6008f1631bbfc42ab8d7188fcc716fd95103d4638a1ad50762d5cc4d51",
+      "published_sha256": "5f565b6008f1631bbfc42ab8d7188fcc716fd95103d4638a1ad50762d5cc4d51",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/headroom_diagnostic_20261112/CODEBOOK.md",
+      "source_sha256": "18f272ae7723d2780a916033e88f2fa9ff39e3013acd8c48c87279db65f5bab0",
+      "published_sha256": "18f272ae7723d2780a916033e88f2fa9ff39e3013acd8c48c87279db65f5bab0",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/headroom_diagnostic_20261112/PROTOCOL_STAGE0.md",
+      "source_sha256": "685705eed17511268f01223218cf6f43bb4eea7f050797b2d7b5cb82d4d86ae7",
+      "published_sha256": "685705eed17511268f01223218cf6f43bb4eea7f050797b2d7b5cb82d4d86ae7",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/headroom_diagnostic_20261112/PROTOCOL_STAGE1.md",
+      "source_sha256": "32e0433913a2a59e1dfbad0407821cdbfaa96765af0118d68714d265f0f5fa63",
+      "published_sha256": "e22da1aa03966f29724b1e33b211e3dfea608c86d4701a985275aebb185ef76d",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 1
+      }
+    },
+    {
+      "path": "research/studies/headroom_diagnostic_20261112/PROTOCOL_STAGE1C.md",
+      "source_sha256": "9aeb4215358daa6f0986564e5e6a609e3cc14bdc74ea43f1166b2fd713341a89",
+      "published_sha256": "9aeb4215358daa6f0986564e5e6a609e3cc14bdc74ea43f1166b2fd713341a89",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/headroom_diagnostic_20261112/PROTOCOL_STAGE2A.md",
+      "source_sha256": "daf899b96ee8ae78bdc6590f06335c112afa251c63664940b7a6fcf775e2f290",
+      "published_sha256": "daf899b96ee8ae78bdc6590f06335c112afa251c63664940b7a6fcf775e2f290",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/headroom_diagnostic_20261112/PROTOCOL_STAGE3B.md",
+      "source_sha256": "d46791fcab8cb8158c4df94261001c8355310df19621486a2570e2b67f94591f",
+      "published_sha256": "d46791fcab8cb8158c4df94261001c8355310df19621486a2570e2b67f94591f",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/headroom_diagnostic_20261112/PROTOCOL_STAGE3C.md",
+      "source_sha256": "7c48806c932086a72f4bdcc52920a2923974b1694eba2a3aff4c11539f6b30c6",
+      "published_sha256": "7c48806c932086a72f4bdcc52920a2923974b1694eba2a3aff4c11539f6b30c6",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/headroom_diagnostic_20261112/PROTOCOL_STAGE3D.md",
+      "source_sha256": "04825057216d6a1b2509ac49b1d449f5fc0d78c07c1d6193a0ed126eb0b468b2",
+      "published_sha256": "04825057216d6a1b2509ac49b1d449f5fc0d78c07c1d6193a0ed126eb0b468b2",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/headroom_diagnostic_20261112/RELABEL_AGREEMENT.md",
+      "source_sha256": "317e0b462f9b71dc43e68ef66b7a468720d1273085b5faf8fb4e15f820298ff8",
+      "published_sha256": "317e0b462f9b71dc43e68ef66b7a468720d1273085b5faf8fb4e15f820298ff8",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/headroom_diagnostic_20261112/REPORT_STAGE3B.md",
+      "source_sha256": "8b5ce913ceb8497dd80d6ea85f4d78e762abc673fef882ee50292c0a99236773",
+      "published_sha256": "8b5ce913ceb8497dd80d6ea85f4d78e762abc673fef882ee50292c0a99236773",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/headroom_diagnostic_20261112/REPORT_STAGE3C.md",
+      "source_sha256": "74b3407ba61aeab13ca93972d628f306e2d2c3f5633d71c22a3740b948208bae",
+      "published_sha256": "74b3407ba61aeab13ca93972d628f306e2d2c3f5633d71c22a3740b948208bae",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/headroom_diagnostic_20261112/STAGE0_TABLES.md",
+      "source_sha256": "ac0b4977d91ac764633002023f12e62c341287c8164c9b3bcadd7deaed2871fc",
+      "published_sha256": "ac0b4977d91ac764633002023f12e62c341287c8164c9b3bcadd7deaed2871fc",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/headroom_diagnostic_20261112/STAGE1C_RELABEL.md",
+      "source_sha256": "025aa69d2e3bc1bd6441fca95125028e8cec2978d9cf420e8a8828573e6082f1",
+      "published_sha256": "025aa69d2e3bc1bd6441fca95125028e8cec2978d9cf420e8a8828573e6082f1",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/headroom_diagnostic_20261112/STAGE1C_TABLES.md",
+      "source_sha256": "a198012c80253a096b5d321fb1cda44d213d51f9d650989431f76637d4f17cd3",
+      "published_sha256": "a198012c80253a096b5d321fb1cda44d213d51f9d650989431f76637d4f17cd3",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/headroom_diagnostic_20261112/STAGE1_TABLES.md",
+      "source_sha256": "03905afe0abd0ae8a3e4cd63a58d16928b643673d834e1ab1175020c037157f6",
+      "published_sha256": "03905afe0abd0ae8a3e4cd63a58d16928b643673d834e1ab1175020c037157f6",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/headroom_diagnostic_20261112/STAGE2A_TABLES.md",
+      "source_sha256": "f8c0ff2fe80c797249a22f7ac0255514ea7baeb14c8446f0ecd5446f7d7c4e4d",
+      "published_sha256": "f8c0ff2fe80c797249a22f7ac0255514ea7baeb14c8446f0ecd5446f7d7c4e4d",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/headroom_diagnostic_20261112/STAGE3B_LOG.md",
+      "source_sha256": "cd006e56ea647cf97a23d60b135ac23e6823ea6ed311880e99fe03b59f7db630",
+      "published_sha256": "cd006e56ea647cf97a23d60b135ac23e6823ea6ed311880e99fe03b59f7db630",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/headroom_diagnostic_20261112/STAGE3B_TABLES.md",
+      "source_sha256": "af246ff18389f04a42e4e3865c235b1be0108fb7861c0065d3eecd2d03ed59c7",
+      "published_sha256": "af246ff18389f04a42e4e3865c235b1be0108fb7861c0065d3eecd2d03ed59c7",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/headroom_diagnostic_20261112/STAGE3C_BLIND_SHEET.md",
+      "source_sha256": "f7cfcd6ba537f4d897fd9f78377374aa1dbf9cc367dadaa6bdb21c5384e9cfce",
+      "published_sha256": "f7cfcd6ba537f4d897fd9f78377374aa1dbf9cc367dadaa6bdb21c5384e9cfce",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/headroom_diagnostic_20261112/STAGE3C_TABLES.md",
+      "source_sha256": "1e174f26c442c16461b03bbf3d61192526e1370d9eac6e934bfc6ed5483daef7",
+      "published_sha256": "1e174f26c442c16461b03bbf3d61192526e1370d9eac6e934bfc6ed5483daef7",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/headroom_diagnostic_20261112/STAGE3_TABLES.md",
+      "source_sha256": "4647d315d740ca8f8eaae9bde12c99926b7bbcf210036264e7bde82ee36a5010",
+      "published_sha256": "4647d315d740ca8f8eaae9bde12c99926b7bbcf210036264e7bde82ee36a5010",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/native_read_investigation_20261111/PROTOCOL.md",
+      "source_sha256": "2f736649c9e770617f2b1ea698fbb31c4cc23773d3a3fee08b4f8b429691cba0",
+      "published_sha256": "2f736649c9e770617f2b1ea698fbb31c4cc23773d3a3fee08b4f8b429691cba0",
       "source_git_state": "ignored",
       "source_commit_contains_bytes": false,
       "redactions": {
