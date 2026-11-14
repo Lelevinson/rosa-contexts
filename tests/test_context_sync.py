@@ -146,6 +146,7 @@ class ContextSyncTests(unittest.TestCase):
         preview = self.run_helper("preview")
         self.assertEqual(preview.returncode, 0, preview.stdout + preview.stderr)
         self.assertIn("UPDATE", preview.stdout)
+        self.assertNotIn("All published files are untracked or ignored", preview.stdout)
         self.assertEqual(target_file.read_bytes(), before_target)
         self.assertEqual((self.target / ".context-sync/manifest.json").read_bytes(), before_manifest)
         self.assertEqual(source_file.read_bytes(), b"Updated A\n")
@@ -255,6 +256,31 @@ class ContextSyncTests(unittest.TestCase):
         first = self.run_helper("sync", "--first-publish")
         self.assertEqual(first.returncode, 0, first.stdout + first.stderr)
         self.assertEqual((self.target / "research/a.md").read_bytes(), b"Original A\n")
+
+    def test_preview_notes_when_all_files_are_ignored_or_untracked(self) -> None:
+        source = self.base / "untracked-source"
+        git(self.base, "init", "--initial-branch=research/test", str(source))
+        git(source, "config", "user.name", "Context Source Test")
+        git(source, "config", "user.email", "source@example.invalid")
+        git(source, "remote", "add", "origin", "https://github.com/Example/rosa-research.git")
+        (source / ".gitignore").write_text("research/a.md\n", encoding="utf-8")
+        commit_all(source, "Ignore one published source file")
+        (source / "research").mkdir()
+        (source / "research/a.md").write_text("Original A\n", encoding="utf-8")
+        (source / "research/b.md").write_text("Original B\n", encoding="utf-8")
+
+        result = subprocess.run(
+            ["python3", str(SCRIPT), "preview", "--source", str(source)],
+            cwd=self.target,
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertIn("All published files are untracked or ignored", result.stdout)
+        self.assertIn("source_commit_sha does not identify them", result.stdout)
+        self.assertIn("this branch may be their only version history", result.stdout)
 
 
 if __name__ == "__main__":
