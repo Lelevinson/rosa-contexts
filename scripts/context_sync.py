@@ -564,6 +564,16 @@ def print_plan(
         print("No deletions requested.")
     if removed:
         print("Deletions are allowed only after removing paths from the committed allowlist and passing --confirm-deletions.")
+    if (
+        preview
+        and not errors
+        and planned
+        and all(item.source_git_state in {"ignored", "untracked"} for item in planned)
+    ):
+        print(
+            "NOTE      All published files are untracked or ignored in the source repository; "
+            "source_commit_sha does not identify them, and this branch may be their only version history."
+        )
     print("Review the resulting Git diff before staging, committing, or pushing.")
 
 

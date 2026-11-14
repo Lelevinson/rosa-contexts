@@ -10,7 +10,7 @@ cd rosa-contexts
 git fetch --prune origin
 ```
 
-Read `README.md`, `PROTOCOL.md`, and this guide. The repository is public. Do not put private context in it.
+Read `README.md`, `PROTOCOL.md`, and this guide. The repository is private and readable by invited collaborators only. Its contents are shared with every collaborator and their AI tools. Assistants use the member's own authenticated Git access. Anonymous clone is unavailable. Do not put private context in it.
 
 ## 2. Create your branch
 
@@ -24,7 +24,7 @@ The branch starts with the shared docs and helper. Do not create a root `AGENTS.
 
 ## 3. Find your authoritative local context
 
-In your ROSA research repository, read its local AI instructions and research entrypoint. Identify the files that best explain active work, previous decisions, results, negative findings, and how to navigate deeper studies. Keep your existing hierarchy. Exclude credentials, private paths/maps, raw traces, archives, code, and large or unrelated artifacts. Include only files that are suitable for public release.
+In your ROSA research repository, read its local AI instructions and research entrypoint. Identify the files that best explain active work, previous decisions, results, negative findings, and how to navigate deeper studies. Keep your existing hierarchy. Exclude credentials, private paths/maps, raw traces, archives, code, and large or unrelated artifacts. Include only files that are safe to share with every collaborator and their AI tools.
 
 ## 4. Create a manifest allowlist
 
@@ -36,6 +36,8 @@ cp templates/manifest.example.json .context-sync/manifest.json
 ```
 
 The manifest is the allowlist. It also receives source commit, UTC time, protocol commit, per-file hashes, and source Git status when sync runs. A source commit SHA does not prove that ignored or uncommitted context files are included in that commit.
+
+Paste the optional instruction block in [templates/AGENTS_SNIPPET.md](templates/AGENTS_SNIPPET.md) into your local AGENTS.md or CLAUDE.md. Do not create a root AGENTS.md in this repository.
 
 Integrate this repository's workflow into your local AI instructions. Tell your assistant to inspect relevant teammate branches before substantial research, treat their conclusions as reported evidence, preserve your local source as authoritative, and publish only meaningful context updates.
 
@@ -51,7 +53,7 @@ git diff --stat
 git diff
 ```
 
-The first command is a read-only preview. The second copies the approved files locally and records their provenance; `--first-publish` allows a missing remote member branch. The helper does not stage, commit, or push. Review every diff for research accuracy and public suitability. The helper redacts local home paths and private IPv4 addresses, and blocks common token, private-key, credential-assignment, and email patterns; these checks can miss sensitive material.
+The first command is a read-only preview. The second copies the approved files locally and records their provenance; `--first-publish` allows a missing remote member branch. The helper does not stage, commit, or push. Review every diff for research accuracy and suitability for sharing with every collaborator and their AI tools. The helper redacts local home paths and private IPv4 addresses, and blocks common token, private-key, credential-assignment, and email patterns; these checks can miss sensitive material.
 
 When the diff is ready:
 
@@ -92,4 +94,4 @@ git diff --check
 git diff
 ```
 
-Review the public diff, then stage, commit, and push manually as in Step 5. The helper refuses an unexpected remote update or conflict. Inspect and merge the intended history; never force-push. To intentionally remove a file, remove it from the committed manifest allowlist, preview, and pass `--confirm-deletions` to sync. A missing source file that remains allowlisted is an error, not a deletion request.
+Review the shared diff, then stage, commit, and push manually as in Step 5. The helper refuses an unexpected remote update or conflict. Inspect and merge the intended history; never force-push. To intentionally remove a file, remove it from the committed manifest allowlist, preview, and pass `--confirm-deletions` to sync. A missing source file that remains allowlisted is an error, not a deletion request.
