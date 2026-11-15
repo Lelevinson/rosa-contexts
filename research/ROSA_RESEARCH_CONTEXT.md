@@ -760,3 +760,58 @@ mandatory preflight and current authorization. See the
 [Stage 3b report](studies/headroom_diagnostic_20261112/REPORT_STAGE3B.md),
 [frozen protocol](studies/headroom_diagnostic_20261112/PROTOCOL_STAGE3B.md) and
 [active state](ACTIVE_STATE.md).
+
+## 24. Released Forge pilot comparison — 2026-11-15 (additive)
+
+**F — new local-model execution, development evidence only:** the owner
+authorized released PyPI Forge 0.10.1 on exactly the pilot C1 cells: four
+models, ten tasks and seeds 1/2, 80 unique attempts. Historical A1/C1 original
+traces were hash-verified and rescored with the same frozen scorer-v2.0;
+those controls were not re-executed. Frozen supported-complete counts are
+Forge **55/80** (lfm3 12, Qwen 18, gpt-oss 17, bonsai 8 of 20), C1 **70/80**
+and A1 **47/80**. Forge used 643 requests, 2,215,689 reported tokens and 790
+native ROS command starts; C1 used 486, 1,676,502 and 556. Two recovered
+backend parser errors omit usage, so Forge's token total excludes unknown
+work. There were two iteration-limit failures, no worker crashes/timeouts,
+and no compaction. These are scoped observations, not novelty or general
+superiority conclusions; no main algorithm is selected by this result.
+
+The owner specified C1's exact system messages with only final_answer renamed
+to respond, the same 12 read tools, no required steps/prerequisites, 40 calls,
+and TieredCompact(keep_recent=2) at 65536. Only options and the explicit think
+field were adapted at HTTP transport level; all 52 installed Forge Python
+files remain unchanged. Offline serialization through the installed pilot
+SDK reconstructs think:false for every model; historical raw HTTP bodies
+were not retained. gpt-oss still returns thinking with that field, and an
+offline mock confirms the pilot SDK hides it when reasoning=False. Preserve
+that visibility uncertainty. The two earlier thinking-on smoke episodes
+remain separate. A thinking ablation was recorded as an open question only,
+not performed. A1 offered the full stock tool menu under the native write
+guard, whereas C1/Forge use the compact read menu; A1 is descriptive context,
+not a menu-matched strong control.
+
+**F — fixture-validity defect:** the unchanged scripted-change hook watches
+exact absolute command strings. Valid relative parameter reads miss its
+trigger in Forge gpt-oss e1h_chg_1 seed 2 and in historical A1 gpt-oss
+e1h_chg_2 seed 2 and bonsai e1h_chg_1 seed 2. The Forge case freshly read 30
+twice because the change to 45 never happened; its frozen failure is not
+evidence of a stale cache. C1's 16 scripted changes all fired. Frozen labels
+and denominators remain intact; no corrected success count, exclusion,
+fixture repair or replacement model run was substituted. Any future change
+to that evaluation contract needs its own dated decision before inference.
+
+One parent orchestration stop after a safely rejected malformed read was
+corrected after 53 cells. The remaining 27 resumed without replaying any
+completed cell; AST checks verify unchanged episode/client/tool/scoring
+logic. All nine fixture sessions verified cleanup; all 17 recorded oracle
+snapshots passed, with one interrupted post-oracle explicitly unavailable.
+All 80 scores replay consistently. Held-out E2/E3/E3b were not opened or run;
+this mission authorizes no further evaluation or framework integration.
+
+Evidence: [full report](studies/forge_baseline_20261115/REPORT.md),
+[protocol and amendment](studies/forge_baseline_20261115/PROTOCOL_FULL.md),
+[same-cell comparison](studies/forge_baseline_20261115/SAME_CELL_COMPARISON.md),
+[fixture audit](studies/forge_baseline_20261115/FIXTURE_EVENT_AUDIT.json), and
+[final validation](studies/forge_baseline_20261115/FINAL_VALIDATION.json).
+Raw traces remain in `_artifacts/runs/forge_baseline_20261115/`. No independent
+scientific review or fresh concurrent control run is claimed.

@@ -81,7 +81,19 @@
     "research/studies/headroom_diagnostic_20261112/STAGE3C_BLIND_SHEET.md",
     "research/studies/headroom_diagnostic_20261112/STAGE3C_TABLES.md",
     "research/studies/headroom_diagnostic_20261112/STAGE3_TABLES.md",
-    "research/studies/native_read_investigation_20261111/PROTOCOL.md"
+    "research/studies/native_read_investigation_20261111/PROTOCOL.md",
+    "research/decisions/2026-11-15-scorer-v2.md",
+    "research/studies/forge_baseline_20261115/REPORT.md",
+    "research/studies/forge_baseline_20261115/PROTOCOL_FULL.md",
+    "research/studies/forge_baseline_20261115/PROTOCOL_SMOKE.md",
+    "research/studies/forge_baseline_20261115/SAME_CELL_COMPARISON.md",
+    "research/studies/forge_baseline_20261115/INDEPENDENT_CHECK.md",
+    "research/studies/residual_failures_20261115/RESIDUAL_FAILURES.md",
+    "research/studies/residual_failures_20261115/WASTE_ANALYSIS.md",
+    "research/studies/residual_failures_20261115/WASTE_BY_CAUSE.md",
+    "research/studies/residual_failures_20261115/WASTE_BY_CAUSE_RULES.md",
+    "research/studies/residual_failures_20261115/WASTE_BY_CAUSE_RULES_V2.md",
+    "research/studies/residual_failures_20261115/FORGE_COMPARISON.md"
   ],
   "important_missing_context": [
     "research/.local/WORKSPACE_MAP.md is machine-specific and excluded.",
@@ -90,12 +102,13 @@
     "Python source, runtime dependencies, and raw structured trace files are excluded; this branch shares context, not runnable studies.",
     "Some historical archive and previous-checkout reports referenced by STUDY_INDEX.md are outside the current source tree and are not mirrored. The index and canonical context retain their available summaries and limitations.",
     "The Mission C report and original 64 structured-dependency traces remain unavailable, as recorded in the local index and study inventory.",
-    "Unselected algorithm specifications and working drafts are not included; current context records that no algorithm is selected.",
-    "A source-tree inventory found 77 other Markdown files under research outside this 43-file allowlist, including supplemental literature notes, study protocols and intermediate materials, copied inputs or source snapshots, and working specifications. They were not included or content-reviewed. This is a curated context mirror, not the full research archive."
+    "Many other research Markdown files are outside the allowlist, including supplemental literature, study protocols, inputs, and working specifications; this curated mirror is not the full archive.",
+    "The Claude Project project_docs copies are excluded; the owner has not approved publishing them.",
+    "Held-out task texts, answers, support lists and routes are excluded, as are source code, raw traces and artifacts."
   ],
   "source_branch": "research/capability-discovery-20261110",
-  "source_commit_sha": "b12b1bd606229f8cbcb1b32681850bf164f84d77",
-  "synchronized_at_utc": "2026-11-14T08:15:37Z",
+  "source_commit_sha": "7a8c9f70f61d6334e9c85cc33232c677e2072561",
+  "synchronized_at_utc": "2026-11-15T14:07:49Z",
   "protocol_commit": "26ac7bd9bd65abeb5ff672c045f209e602a0af9e",
   "source_commit_note": "source_commit_sha identifies Git HEAD only; per-file hashes and source_git_state show whether each published byte exists in that commit.",
   "files": [
@@ -112,10 +125,10 @@
     },
     {
       "path": "research/ACTIVE_STATE.md",
-      "source_sha256": "2045b600da6e7c7b253f46e1db74e1b60bca737b0b6cf748693174f88abd3958",
-      "published_sha256": "2045b600da6e7c7b253f46e1db74e1b60bca737b0b6cf748693174f88abd3958",
-      "source_git_state": "ignored",
-      "source_commit_contains_bytes": false,
+      "source_sha256": "9f010d152b47ad6abfe1b64903abd951f88e1b397bbe20015d1170cfcba34f19",
+      "published_sha256": "9f010d152b47ad6abfe1b64903abd951f88e1b397bbe20015d1170cfcba34f19",
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
       "redactions": {
         "local_paths": 0,
         "private_network_addresses": 0
@@ -123,8 +136,8 @@
     },
     {
       "path": "research/STUDY_INDEX.md",
-      "source_sha256": "71afdc44a967eda9aa48693cc4be00690b6c583721cc76fbfdbfa405e0529eef",
-      "published_sha256": "0f579e1d68aca2d54760a436ce2446e83c101a83ea80953c48d479bd68431eab",
+      "source_sha256": "575aa8fa6f3c0c020a423947cd4350a55c706ee037e6abe8edf6de96bc8d9d27",
+      "published_sha256": "c5e49b2510b31c80b09375c26feab561c2a3717686c0183b7038ae1ae8dfcaa3",
       "source_git_state": "ignored",
       "source_commit_contains_bytes": false,
       "redactions": {
@@ -145,8 +158,8 @@
     },
     {
       "path": "research/CONTEXT_DIGEST.md",
-      "source_sha256": "cce68277c70d4f4691e743c1bda6e459c6b05dcc68c4da35119f712a87aa053e",
-      "published_sha256": "cce68277c70d4f4691e743c1bda6e459c6b05dcc68c4da35119f712a87aa053e",
+      "source_sha256": "95d4053e80781a35c52ea03294bfbb837f59e0c64720e3ed6713b6de723ff84b",
+      "published_sha256": "95d4053e80781a35c52ea03294bfbb837f59e0c64720e3ed6713b6de723ff84b",
       "source_git_state": "ignored",
       "source_commit_contains_bytes": false,
       "redactions": {
@@ -156,8 +169,8 @@
     },
     {
       "path": "research/ROSA_RESEARCH_CONTEXT.md",
-      "source_sha256": "1baa09d7135b5f047df8a29e06873f3eab717b52619f06af2d0759cd21bf411f",
-      "published_sha256": "eb775c5f5c681c578747d5e1ae8526227948b747347651289a64af17f1773561",
+      "source_sha256": "dc64fa56307db2ade8ede7f22021a895a0f1de401be42b0db51f9805acd32a87",
+      "published_sha256": "821b61bff368750ad33faa2ded0de024282a0317bf9100e361d996bd84342642",
       "source_git_state": "ignored",
       "source_commit_contains_bytes": false,
       "redactions": {
@@ -189,8 +202,8 @@
     },
     {
       "path": "research/decisions/README.md",
-      "source_sha256": "29988e1b787066fcf09ea2e54a37fc5b75009e0b30f128af301c08d6afbff4c2",
-      "published_sha256": "29988e1b787066fcf09ea2e54a37fc5b75009e0b30f128af301c08d6afbff4c2",
+      "source_sha256": "24c295cfe047c24a58240086f401932cae350780990d934eaa68c892264525dc",
+      "published_sha256": "24c295cfe047c24a58240086f401932cae350780990d934eaa68c892264525dc",
       "source_git_state": "ignored",
       "source_commit_contains_bytes": false,
       "redactions": {
@@ -932,6 +945,138 @@
       "source_commit_contains_bytes": false,
       "redactions": {
         "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/decisions/2026-11-15-scorer-v2.md",
+      "source_sha256": "e8f3ff6d6220fee85839a85a2d59cb27be2422c2d65c58d6000724ecefc3dbb2",
+      "published_sha256": "e8f3ff6d6220fee85839a85a2d59cb27be2422c2d65c58d6000724ecefc3dbb2",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/forge_baseline_20261115/REPORT.md",
+      "source_sha256": "2439051039616063e045f0836b588614e490d8ce99bdc7ae348b3f28b75967f5",
+      "published_sha256": "535ad4e976a2b438c8924c95c2e12c7eaed629e62bed25640e227b1a81ddeb0d",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 4,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/forge_baseline_20261115/PROTOCOL_FULL.md",
+      "source_sha256": "a50866a58291c1c555c1ae0691365829d330ec2735e4054d3eb984ccdec5eb91",
+      "published_sha256": "a50866a58291c1c555c1ae0691365829d330ec2735e4054d3eb984ccdec5eb91",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/forge_baseline_20261115/PROTOCOL_SMOKE.md",
+      "source_sha256": "0dab2c1dc970a5f91c8f75fc3d324176efdbf602aba8bd2e47536ce4135f3bc7",
+      "published_sha256": "0dab2c1dc970a5f91c8f75fc3d324176efdbf602aba8bd2e47536ce4135f3bc7",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/forge_baseline_20261115/SAME_CELL_COMPARISON.md",
+      "source_sha256": "17f91f24393f9bf7cbc48081d52e889ed61737e5822e39c38b587c876ff8e03e",
+      "published_sha256": "17f91f24393f9bf7cbc48081d52e889ed61737e5822e39c38b587c876ff8e03e",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/forge_baseline_20261115/INDEPENDENT_CHECK.md",
+      "source_sha256": "da19976586ba15fc75ba95acca111fdda5a49633fe517e30832dfaa2a00c2c66",
+      "published_sha256": "da19976586ba15fc75ba95acca111fdda5a49633fe517e30832dfaa2a00c2c66",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/residual_failures_20261115/RESIDUAL_FAILURES.md",
+      "source_sha256": "3e050ebba205576071010362a1ccbcf47a563a0e66a39aae4b5b6a87771c18d2",
+      "published_sha256": "3e050ebba205576071010362a1ccbcf47a563a0e66a39aae4b5b6a87771c18d2",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/residual_failures_20261115/WASTE_ANALYSIS.md",
+      "source_sha256": "0d6399962fa90b415ab9f649b50f34043adb381760a77a188b9f23d9922597e7",
+      "published_sha256": "0d6399962fa90b415ab9f649b50f34043adb381760a77a188b9f23d9922597e7",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/residual_failures_20261115/WASTE_BY_CAUSE.md",
+      "source_sha256": "49e053a94e1e1710dd63d925ac4e07a0b7e38801daa38b208b91bdd6c39f5781",
+      "published_sha256": "49e053a94e1e1710dd63d925ac4e07a0b7e38801daa38b208b91bdd6c39f5781",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/residual_failures_20261115/WASTE_BY_CAUSE_RULES.md",
+      "source_sha256": "74044a0a260b2a2de1f09b51c9d095796da774675764de667987cc49409af1f1",
+      "published_sha256": "74044a0a260b2a2de1f09b51c9d095796da774675764de667987cc49409af1f1",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/residual_failures_20261115/WASTE_BY_CAUSE_RULES_V2.md",
+      "source_sha256": "2f6a2be5f28a155cef58859934738d26300c2734b7231a6c1d3fc11b71489185",
+      "published_sha256": "2f6a2be5f28a155cef58859934738d26300c2734b7231a6c1d3fc11b71489185",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/residual_failures_20261115/FORGE_COMPARISON.md",
+      "source_sha256": "0e8641bb81a8966d0fc1f921b47c376fc2eabd651138f65790c05c8e759c06a3",
+      "published_sha256": "bd2138351b52127e1eee20edf111b944458ea5720543875eec3d48d0bc0fec77",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 3,
         "private_network_addresses": 0
       }
     }

@@ -20,7 +20,12 @@ A short map of durable decisions, constraints and closed directions, each with i
 - Strong model (gpt-6-luna) used 45 requests vs Qwen 63 on the same cells and still showed serial first requests in one of two `t2` repeats. [Stage 1c](studies/headroom_diagnostic_20261112/REPORT_STAGE1C.md)
 - Stage 3 (generated fixture, 12 dependent tasks) found excess over the floor on arm A0: Qwen 85.4%, Luna 25.3%, 95–100% avoidable. Stage 3b removed the three discovery-first stock messages (arm A1): Qwen 49.0%, Luna 14.3%, support unchanged. Frozen rules: “room” over A0, then “weak-model room remains” over A1; synthetic, A0 and A1 in different sessions, method need not established. [Stage 3](studies/headroom_diagnostic_20261112/REPORT_STAGE3.md), [Stage 3b](studies/headroom_diagnostic_20261112/REPORT_STAGE3B.md)
 
+## Released Forge comparison (last verified 2026-11-15)
+- Owner-authorized 80-cell development pilot, common frozen scorer v2: Forge 55/80 supported, historical C1 70/80, A1 47/80; Forge 643 requests and 2,215,689 reported tokens (two calls lack usage). Matched per-model wire think:false; gpt-oss still emits raw thinking. Separate thinking-on smoke; no new method or held-out inference. [report](studies/forge_baseline_20261115/REPORT.md), [canonical §24](ROSA_RESEARCH_CONTEXT.md)
+- Fixture validity: exact absolute-command watcher misses valid relative parameter reads in one Forge and two A1 changing-task cells; C1's 16 changes fired. Frozen failures retained, not corrected or excluded. No model-rerun replacements; nine fixture cleanups passed, one interrupted post-oracle unavailable. [event audit](studies/forge_baseline_20261115/FIXTURE_EVENT_AUDIT.json)
+
 ## Closed or negative directions (last verified 2026-11-13)
+
 Scoped failures, not impossibility proofs; do not relabel and restart them.
 - **Learned speculative result expansion:** kill bar fired (9.5% saving; static top-1 15.9%), 2026-11-13. [Stage 2a](studies/headroom_diagnostic_20261112/REPORT_STAGE2A.md)
 - **AutoTool family:** 0 complete matches over 269 boundaries; ties equal-feature ordinary backoff; live admission blocked, 2026-11-12. [blocker](studies/autotool_iteration_20261112/BLOCKER_AND_NEXT_DECISION.md), [review](studies/autotool_iteration_20261112/INDEPENDENT_REVIEW.md)
