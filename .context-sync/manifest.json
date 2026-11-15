@@ -93,7 +93,10 @@
     "research/studies/residual_failures_20261115/WASTE_BY_CAUSE.md",
     "research/studies/residual_failures_20261115/WASTE_BY_CAUSE_RULES.md",
     "research/studies/residual_failures_20261115/WASTE_BY_CAUSE_RULES_V2.md",
-    "research/studies/residual_failures_20261115/FORGE_COMPARISON.md"
+    "research/studies/residual_failures_20261115/FORGE_COMPARISON.md",
+    "research/studies/build_round1_20261115/REPORT.md",
+    "research/studies/build_round1_20261115/PROTOCOL.md",
+    "research/studies/build_round1_20261115/BUILD_LOG.md"
   ],
   "important_missing_context": [
     "research/.local/WORKSPACE_MAP.md is machine-specific and excluded.",
@@ -108,7 +111,7 @@
   ],
   "source_branch": "research/capability-discovery-20261110",
   "source_commit_sha": "7a8c9f70f61d6334e9c85cc33232c677e2072561",
-  "synchronized_at_utc": "2026-11-15T14:07:49Z",
+  "synchronized_at_utc": "2026-11-15T16:57:29Z",
   "protocol_commit": "26ac7bd9bd65abeb5ff672c045f209e602a0af9e",
   "source_commit_note": "source_commit_sha identifies Git HEAD only; per-file hashes and source_git_state show whether each published byte exists in that commit.",
   "files": [
@@ -125,10 +128,10 @@
     },
     {
       "path": "research/ACTIVE_STATE.md",
-      "source_sha256": "9f010d152b47ad6abfe1b64903abd951f88e1b397bbe20015d1170cfcba34f19",
-      "published_sha256": "9f010d152b47ad6abfe1b64903abd951f88e1b397bbe20015d1170cfcba34f19",
-      "source_git_state": "committed",
-      "source_commit_contains_bytes": true,
+      "source_sha256": "f2d7eac0fdf3081b345ff357c2fb9188a83737b37b04de51c09f8014b724a2b1",
+      "published_sha256": "f2d7eac0fdf3081b345ff357c2fb9188a83737b37b04de51c09f8014b724a2b1",
+      "source_git_state": "modified-or-staged",
+      "source_commit_contains_bytes": false,
       "redactions": {
         "local_paths": 0,
         "private_network_addresses": 0
@@ -136,8 +139,8 @@
     },
     {
       "path": "research/STUDY_INDEX.md",
-      "source_sha256": "575aa8fa6f3c0c020a423947cd4350a55c706ee037e6abe8edf6de96bc8d9d27",
-      "published_sha256": "c5e49b2510b31c80b09375c26feab561c2a3717686c0183b7038ae1ae8dfcaa3",
+      "source_sha256": "49f8dc80bbae6518a2276850204ca7529fdc1dc5295052ebaa348141930b9db6",
+      "published_sha256": "fed0e1c917556d8eafd9a8a61ef9e67f6cf42623f86fe19329db182cedaf6f00",
       "source_git_state": "ignored",
       "source_commit_contains_bytes": false,
       "redactions": {
@@ -1077,6 +1080,39 @@
       "source_commit_contains_bytes": false,
       "redactions": {
         "local_paths": 3,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/build_round1_20261115/REPORT.md",
+      "source_sha256": "c0878a0a05b971d599606764881ef1dd675c0acb075b19ccc1e8819b8bdc3f9f",
+      "published_sha256": "c0878a0a05b971d599606764881ef1dd675c0acb075b19ccc1e8819b8bdc3f9f",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/build_round1_20261115/PROTOCOL.md",
+      "source_sha256": "b32a8a980dc0071ffdc17a847570f19c93f760e09940f1ae0689560cc2826184",
+      "published_sha256": "86f731f65b5ab1d410f348068acb629e1c3f88fa2836008584623f73866cf692",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 1
+      }
+    },
+    {
+      "path": "research/studies/build_round1_20261115/BUILD_LOG.md",
+      "source_sha256": "74138bed31445549c5883102438be67b0db8052318159098459ebc4b54049d15",
+      "published_sha256": "74138bed31445549c5883102438be67b0db8052318159098459ebc4b54049d15",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
         "private_network_addresses": 0
       }
     }
