@@ -40,3 +40,9 @@ If a file has `source_git_state` `ignored` or `untracked`, `source_commit_sha` d
 Read [PROTOCOL.md](PROTOCOL.md) for reading, overlap checks, updates, deletion handling, privacy, and stale-branch recovery. Read [ONBOARDING.md](ONBOARDING.md) to create a member branch and the first snapshot.
 
 The sync helper supports a preview and a local copy operation. It checks the allowlist, scans public text, verifies the target branch and current remote history, and never stages, commits, or pushes. A member reviews the resulting diff and publishes it manually.
+
+## Questions for teammates
+
+Please see the [test design open questions](research/decisions/2026-11-17-test-design-open-questions.md) for model selection, Nav2 pool, comparisons, temperature, rounds and time budget.
+
+**Status, 2026-11-17:** [Round 2](research/studies/build_round2_20261116/PROTOCOL.md) IN PROGRESS; results are not final. The active-state snapshot predates the Nav2 smoke; see the [Nav2 plan](research/decisions/2026-11-17-nav2-heldout-plan.md).

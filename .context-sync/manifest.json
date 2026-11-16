@@ -96,7 +96,16 @@
     "research/studies/residual_failures_20261115/FORGE_COMPARISON.md",
     "research/studies/build_round1_20261115/REPORT.md",
     "research/studies/build_round1_20261115/PROTOCOL.md",
-    "research/studies/build_round1_20261115/BUILD_LOG.md"
+    "research/studies/build_round1_20261115/BUILD_LOG.md",
+    "research/studies/build_round2_20261116/PROTOCOL.md",
+    "research/studies/build_round2_20261116/BUILD_LOG.md",
+    "research/studies/build_round2_20261116/DISCOVERY_FLAKES.md",
+    "research/studies/offline_replay2_20261116/PROTOCOL.md",
+    "research/studies/offline_replay2_20261116/REPORT.md",
+    "research/decisions/2026-11-17-test-design-rationale.md",
+    "research/decisions/2026-11-17-test-design-open-questions.md",
+    "research/decisions/2026-11-17-lab-computer-setup.md",
+    "research/decisions/2026-11-17-nav2-heldout-plan.md"
   ],
   "important_missing_context": [
     "research/.local/WORKSPACE_MAP.md is machine-specific and excluded.",
@@ -110,8 +119,8 @@
     "Held-out task texts, answers, support lists and routes are excluded, as are source code, raw traces and artifacts."
   ],
   "source_branch": "research/capability-discovery-20261110",
-  "source_commit_sha": "7a8c9f70f61d6334e9c85cc33232c677e2072561",
-  "synchronized_at_utc": "2026-11-15T16:57:29Z",
+  "source_commit_sha": "81e36f71a3371e4d009ff02f5b54154af56239a4",
+  "synchronized_at_utc": "2026-11-16T17:08:30Z",
   "protocol_commit": "26ac7bd9bd65abeb5ff672c045f209e602a0af9e",
   "source_commit_note": "source_commit_sha identifies Git HEAD only; per-file hashes and source_git_state show whether each published byte exists in that commit.",
   "files": [
@@ -128,8 +137,8 @@
     },
     {
       "path": "research/ACTIVE_STATE.md",
-      "source_sha256": "f2d7eac0fdf3081b345ff357c2fb9188a83737b37b04de51c09f8014b724a2b1",
-      "published_sha256": "f2d7eac0fdf3081b345ff357c2fb9188a83737b37b04de51c09f8014b724a2b1",
+      "source_sha256": "73094b3acdf2a7ce93348c2640dcbf5f05ddfd612329c0722a9656372e63832a",
+      "published_sha256": "73094b3acdf2a7ce93348c2640dcbf5f05ddfd612329c0722a9656372e63832a",
       "source_git_state": "modified-or-staged",
       "source_commit_contains_bytes": false,
       "redactions": {
@@ -139,8 +148,8 @@
     },
     {
       "path": "research/STUDY_INDEX.md",
-      "source_sha256": "49f8dc80bbae6518a2276850204ca7529fdc1dc5295052ebaa348141930b9db6",
-      "published_sha256": "fed0e1c917556d8eafd9a8a61ef9e67f6cf42623f86fe19329db182cedaf6f00",
+      "source_sha256": "35b0ff5f1bdfb9e459b6b2e4071a2cff5abc3fb97c15f1750fcf91647d4d23a4",
+      "published_sha256": "bc917492868f531e594aeae7695a03768c07876f8d35b908c5a49c1ea74bd210",
       "source_git_state": "ignored",
       "source_commit_contains_bytes": false,
       "redactions": {
@@ -1111,6 +1120,105 @@
       "published_sha256": "74138bed31445549c5883102438be67b0db8052318159098459ebc4b54049d15",
       "source_git_state": "ignored",
       "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/build_round2_20261116/PROTOCOL.md",
+      "source_sha256": "91ddce184e837e91bc93c14c3af2010c68c54530641e5768cbaafdf6538f408e",
+      "published_sha256": "91ddce184e837e91bc93c14c3af2010c68c54530641e5768cbaafdf6538f408e",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/build_round2_20261116/BUILD_LOG.md",
+      "source_sha256": "c8b3123435dc7bf5eaff20f59466e387f5763d20b0766390eaff53557c0dc221",
+      "published_sha256": "c8b3123435dc7bf5eaff20f59466e387f5763d20b0766390eaff53557c0dc221",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/build_round2_20261116/DISCOVERY_FLAKES.md",
+      "source_sha256": "eb26fd778ac9ecf9a3bf548b5d094cb55dc5e56e3da8b1a5ad3eb13a08b8afbc",
+      "published_sha256": "eb26fd778ac9ecf9a3bf548b5d094cb55dc5e56e3da8b1a5ad3eb13a08b8afbc",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/offline_replay2_20261116/PROTOCOL.md",
+      "source_sha256": "9023d194a9ab1d202af4a19b1534952f450e15d8bbcc22a662d02df4506c3856",
+      "published_sha256": "9023d194a9ab1d202af4a19b1534952f450e15d8bbcc22a662d02df4506c3856",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/offline_replay2_20261116/REPORT.md",
+      "source_sha256": "e074c05d59b1180d1475cc893433cc07b77b9327c3a315ae8fcc36c1d32efb17",
+      "published_sha256": "e074c05d59b1180d1475cc893433cc07b77b9327c3a315ae8fcc36c1d32efb17",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/decisions/2026-11-17-test-design-rationale.md",
+      "source_sha256": "8d6013ed3fd91c7e61b383605cc71c9b329fdb019a8736c9d83f35b6cf49dba3",
+      "published_sha256": "8d6013ed3fd91c7e61b383605cc71c9b329fdb019a8736c9d83f35b6cf49dba3",
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/decisions/2026-11-17-test-design-open-questions.md",
+      "source_sha256": "9b844c41c1639c1aa3690bd4b3c09224ca9decca29a927b2b6fbaccb7533d8a8",
+      "published_sha256": "9b844c41c1639c1aa3690bd4b3c09224ca9decca29a927b2b6fbaccb7533d8a8",
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/decisions/2026-11-17-lab-computer-setup.md",
+      "source_sha256": "d92049e1e5c4cc546878de25c0a4e3ef46a9394d56f6e83ede96763b8030b924",
+      "published_sha256": "d92049e1e5c4cc546878de25c0a4e3ef46a9394d56f6e83ede96763b8030b924",
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/decisions/2026-11-17-nav2-heldout-plan.md",
+      "source_sha256": "f7b817b90bdcdaddcb2f82a197bd0a0fbac074e1215c9e1ef711efda140d3e58",
+      "published_sha256": "f7b817b90bdcdaddcb2f82a197bd0a0fbac074e1215c9e1ef711efda140d3e58",
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
       "redactions": {
         "local_paths": 0,
         "private_network_addresses": 0
