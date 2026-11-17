@@ -105,7 +105,9 @@
     "research/decisions/2026-11-17-test-design-rationale.md",
     "research/decisions/2026-11-17-test-design-open-questions.md",
     "research/decisions/2026-11-17-lab-computer-setup.md",
-    "research/decisions/2026-11-17-nav2-heldout-plan.md"
+    "research/decisions/2026-11-17-nav2-heldout-plan.md",
+    "research/PAPER_GOAL_CONTRACT.md",
+    "research/decisions/2026-11-17-steady-loop-teammate-one-page.md"
   ],
   "important_missing_context": [
     "research/.local/WORKSPACE_MAP.md is machine-specific and excluded.",
@@ -119,8 +121,8 @@
     "Held-out task texts, answers, support lists and routes are excluded, as are source code, raw traces and artifacts."
   ],
   "source_branch": "research/capability-discovery-20261110",
-  "source_commit_sha": "81e36f71a3371e4d009ff02f5b54154af56239a4",
-  "synchronized_at_utc": "2026-11-16T17:08:30Z",
+  "source_commit_sha": "245f0aef08dbb017d2fb96414c475460160e1605",
+  "synchronized_at_utc": "2026-11-17T10:06:26Z",
   "protocol_commit": "26ac7bd9bd65abeb5ff672c045f209e602a0af9e",
   "source_commit_note": "source_commit_sha identifies Git HEAD only; per-file hashes and source_git_state show whether each published byte exists in that commit.",
   "files": [
@@ -137,10 +139,10 @@
     },
     {
       "path": "research/ACTIVE_STATE.md",
-      "source_sha256": "73094b3acdf2a7ce93348c2640dcbf5f05ddfd612329c0722a9656372e63832a",
-      "published_sha256": "73094b3acdf2a7ce93348c2640dcbf5f05ddfd612329c0722a9656372e63832a",
-      "source_git_state": "modified-or-staged",
-      "source_commit_contains_bytes": false,
+      "source_sha256": "55ae9e7f0650be583407e3cf8133f4a4ebb390c19f63a0d0b84f9f24c87885e1",
+      "published_sha256": "55ae9e7f0650be583407e3cf8133f4a4ebb390c19f63a0d0b84f9f24c87885e1",
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
       "redactions": {
         "local_paths": 0,
         "private_network_addresses": 0
@@ -1215,8 +1217,30 @@
     },
     {
       "path": "research/decisions/2026-11-17-nav2-heldout-plan.md",
-      "source_sha256": "f7b817b90bdcdaddcb2f82a197bd0a0fbac074e1215c9e1ef711efda140d3e58",
-      "published_sha256": "f7b817b90bdcdaddcb2f82a197bd0a0fbac074e1215c9e1ef711efda140d3e58",
+      "source_sha256": "0cc89e680716be492befbcfc54313e0e80f3d94fb30976bcf2fb44d2f0d42e35",
+      "published_sha256": "0cc89e680716be492befbcfc54313e0e80f3d94fb30976bcf2fb44d2f0d42e35",
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/PAPER_GOAL_CONTRACT.md",
+      "source_sha256": "104ecbd07f279d86e1422728fa485ef4ca62c5120ce64f34ce7317d65dea3215",
+      "published_sha256": "104ecbd07f279d86e1422728fa485ef4ca62c5120ce64f34ce7317d65dea3215",
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/decisions/2026-11-17-steady-loop-teammate-one-page.md",
+      "source_sha256": "53fec58e6d30eeccac133dbe85c9a731942e78fa53e8b8ec42a1ea90c5b97856",
+      "published_sha256": "53fec58e6d30eeccac133dbe85c9a731942e78fa53e8b8ec42a1ea90c5b97856",
       "source_git_state": "committed",
       "source_commit_contains_bytes": true,
       "redactions": {
