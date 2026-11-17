@@ -107,7 +107,8 @@
     "research/decisions/2026-11-17-lab-computer-setup.md",
     "research/decisions/2026-11-17-nav2-heldout-plan.md",
     "research/PAPER_GOAL_CONTRACT.md",
-    "research/decisions/2026-11-17-steady-loop-teammate-one-page.md"
+    "research/decisions/2026-11-17-steady-loop-teammate-one-page.md",
+    "research/decisions/2026-11-17-lab-teammate-brief.md"
   ],
   "important_missing_context": [
     "research/.local/WORKSPACE_MAP.md is machine-specific and excluded.",
@@ -121,8 +122,8 @@
     "Held-out task texts, answers, support lists and routes are excluded, as are source code, raw traces and artifacts."
   ],
   "source_branch": "research/capability-discovery-20261110",
-  "source_commit_sha": "9749bc20950ebcb9b869088055d0254db6a48c73",
-  "synchronized_at_utc": "2026-11-17T10:08:45Z",
+  "source_commit_sha": "dc57e07290ab3a20cd89cf8f0638c201686ebc23",
+  "synchronized_at_utc": "2026-11-17T11:02:55Z",
   "protocol_commit": "26ac7bd9bd65abeb5ff672c045f209e602a0af9e",
   "source_commit_note": "source_commit_sha identifies Git HEAD only; per-file hashes and source_git_state show whether each published byte exists in that commit.",
   "files": [
@@ -1241,6 +1242,17 @@
       "path": "research/decisions/2026-11-17-steady-loop-teammate-one-page.md",
       "source_sha256": "53fec58e6d30eeccac133dbe85c9a731942e78fa53e8b8ec42a1ea90c5b97856",
       "published_sha256": "53fec58e6d30eeccac133dbe85c9a731942e78fa53e8b8ec42a1ea90c5b97856",
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/decisions/2026-11-17-lab-teammate-brief.md",
+      "source_sha256": "7959faaf4830aa030077f19a0de7a10c57dd8b3a4529084c82b3b900af1231fb",
+      "published_sha256": "7959faaf4830aa030077f19a0de7a10c57dd8b3a4529084c82b3b900af1231fb",
       "source_git_state": "committed",
       "source_commit_contains_bytes": true,
       "redactions": {
