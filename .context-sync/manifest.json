@@ -87,7 +87,9 @@
     "research/studies/design_investigations_20261108_20261110/ROSA_Mixed_Graph_Read_Admission_2026-11-10.md",
     "research/studies/fairness_errors_as_text_20261117/PROTOCOL.md",
     "research/studies/fairness_errors_as_text_20261117/REPORT.md",
+    "research/studies/final_exam_draft_20261118/LAB_GUIDE_FOR_TEAM.md",
     "research/studies/final_exam_draft_20261118/LAB_SETUP_CHECKLIST.md",
+    "research/studies/final_exam_draft_20261118/LAB_SETUP_LOG.md",
     "research/studies/final_exam_draft_20261118/NUMBER_RECONCILIATION_20261119.md",
     "research/studies/final_exam_draft_20261118/PROTOCOL_DRAFT.md",
     "research/studies/final_exam_draft_20261118/RUNBOOK.md",
@@ -178,8 +180,8 @@
     "Custodian-only audit notes and candidate-specific held-out opportunity counts are excluded. Team planning and aggregate coverage documents remain available."
   ],
   "source_branch": "research/capability-discovery-20261110",
-  "source_commit_sha": "58a32a5434b8ac86a27b2a4c4a9050dca50ead0c",
-  "synchronized_at_utc": "2026-11-19T09:11:31Z",
+  "source_commit_sha": "8ca6309ae95ca0ec477eb3790bde31904525e657",
+  "synchronized_at_utc": "2026-11-19T14:14:38Z",
   "protocol_commit": "26ac7bd9bd65abeb5ff672c045f209e602a0af9e",
   "source_commit_note": "source_commit_sha identifies Git HEAD only; per-file hashes and source_git_state show whether each published byte exists in that commit.",
   "files": [
@@ -1075,14 +1077,36 @@
       }
     },
     {
-      "path": "research/studies/final_exam_draft_20261118/LAB_SETUP_CHECKLIST.md",
-      "source_sha256": "731eed6c9eb9e68e61c776d10bb549d4914bc05077bb4420ef87df20b83fd837",
-      "published_sha256": "50dbf3cae3bc5b6d4adb185abf97cc433619046bf560131f72b0c818f055c19e",
-      "source_git_state": "ignored",
-      "source_commit_contains_bytes": false,
+      "path": "research/studies/final_exam_draft_20261118/LAB_GUIDE_FOR_TEAM.md",
+      "source_sha256": "beb76c0054fb1ddd62ecaa0e8d808ef86c6abf7a84cbe78a1ab5d28aeb660f7e",
+      "published_sha256": "beb76c0054fb1ddd62ecaa0e8d808ef86c6abf7a84cbe78a1ab5d28aeb660f7e",
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
       "redactions": {
         "local_paths": 0,
-        "private_network_addresses": 1
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/final_exam_draft_20261118/LAB_SETUP_CHECKLIST.md",
+      "source_sha256": "d598f0f60e0ff5176513ca9a48af0e56f3d82964d695be3ea9ccddb70d3609d1",
+      "published_sha256": "25a5340e754b3d2d3acfd671cef75ac1854aad014c9dd2313e0629b7e9273d1e",
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
+      "redactions": {
+        "local_paths": 2,
+        "private_network_addresses": 6
+      }
+    },
+    {
+      "path": "research/studies/final_exam_draft_20261118/LAB_SETUP_LOG.md",
+      "source_sha256": "a7b96fd5b48d4d977f10effc5f946b62bf952270e70be5eb2b2642b3fc4d14e6",
+      "published_sha256": "4811f68f2176df4917b9f25ebdf21028400ecd47c1c6fc9fc7b7ad3082a97fdb",
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
+      "redactions": {
+        "local_paths": 2,
+        "private_network_addresses": 6
       }
     },
     {
@@ -1109,10 +1133,10 @@
     },
     {
       "path": "research/studies/final_exam_draft_20261118/RUNBOOK.md",
-      "source_sha256": "f7dc87a80bea76924d39e0fd30db8450bc6c4374550c3bb2223b7935bf4353c5",
-      "published_sha256": "919fd5d152c43473d1c3a6206be3d04b8f4d424084a53997330eae53f87fd3ce",
-      "source_git_state": "ignored",
-      "source_commit_contains_bytes": false,
+      "source_sha256": "943f6d6181337d3b71fe7d3bca477b8868c38cceaf9189f784ef110f5bed3f72",
+      "published_sha256": "6c149bd4a7b02de642c467b95673f31e4c88320d99ebc12709f51719314b4a73",
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
       "redactions": {
         "local_paths": 1,
         "private_network_addresses": 0
