@@ -45,4 +45,4 @@ The sync helper supports a preview and a local copy operation. It checks the all
 
 Please see the [test design open questions](research/decisions/2026-11-17-test-design-open-questions.md) for model selection, Nav2 pool, comparisons, temperature, rounds and time budget.
 
-**Status, 2026-11-17:** [Round 2](research/studies/build_round2_20261116/PROTOCOL.md) IN PROGRESS; results are not final. The active-state snapshot predates the Nav2 smoke; see the [Nav2 plan](research/decisions/2026-11-17-nav2-heldout-plan.md).
+**Status, 2026-11-19.** The [Round 2 development report](research/studies/build_round2_20261116/REPORT.md), [exam draft](research/studies/final_exam_draft_20261118/PROTOCOL_DRAFT.md), and [lab setup checklist](research/studies/final_exam_draft_20261118/LAB_SETUP_CHECKLIST.md) are available. The exam protocol is still a draft.
