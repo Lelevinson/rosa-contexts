@@ -1,7 +1,9 @@
 # Carlene — koreksi pengguna di antara dua invoke ROSA
 
 20 November 2026, Asia/Taipei. Laporan sumber otoritatif lintas tiga studi;
-disiapkan untuk review context member/krln, belum dipublikasikan.
+snapshot empat Markdown telah tersinkron ke member/krln pada 20 November 2026
+05:28:48 UTC, commit `576f6c03193a8f78fffd797a9296473228f6f21f`.
+Status publikasi diperbarui 21 November; hasil studi tidak berubah.
 
 ## Keputusan dan pertanyaan riset
 
@@ -140,4 +142,5 @@ efek kausal umum. Pada cakupan ini, tidak diperlukan improvement ROSA tambahan.
 
 Keputusan parkir tidak melarang evaluasi pertanyaan lain bila muncul bukti baru;
 tidak ada metode baru, klaim kemampuan semua koreksi, atau jadwal eksperimen lanjutan.
-Langkah saat ini hanya review laporan dan diff snapshot terpilih sebelum publikasi.
+Konteks studi telah dipublikasikan pada snapshot 20 November tersebut; tidak ada
+run lanjutan dalam pembaruan dokumentasi 21 November.

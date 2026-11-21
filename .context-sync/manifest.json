@@ -9,24 +9,28 @@
     "research/START_HERE.md",
     "research/ACTIVE_STATE.md",
     "research/STUDY_INDEX.md",
-    "research/studies/carlene_two_invoke_context_20261120/REPORT.md"
+    "research/studies/carlene_two_invoke_context_20261120/REPORT.md",
+    "research/studies/log_coverage_20261121/SCREENING.md",
+    "research/studies/action_stop_screening_20261121/REPORT.md"
   ],
   "important_missing_context": [
-    "This is a reviewed context snapshot, not the runnable research archive. Original protocols, freeze records, source code, dependencies, raw traces and artifacts for all three studies remain local and are excluded.",
-    "Repository-relative evidence paths in the report are plain-text locators for the source owner, not snapshot links. Original studies are not included in this allowlist.",
-    "The source context Markdown is currently untracked. source_commit_sha identifies source HEAD only; per-file hashes identify the copied bytes.",
-    "Machine configuration, endpoints, credentials, private paths and unrelated teammate material are excluded."
+    "Snapshot Markdown terpilih, bukan arsip runnable. Protokol asli, freeze, source, dependency dan raw evidence studi dua-invoke tetap lokal dan tidak disertakan.",
+    "log_coverage_20261121 hanya membagikan SCREENING.md. REPORT.md rinci, PROTOCOL.md, diagnose.py, FREEZE.json, oracle, fixture dan raw JSON run tetap lokal; diagnostik tool/stub bukan evaluasi C1.",
+    "Source executor dan raw development C1 Levinson, source S1/S2/loop aksi, serta dua trace ending aksi tidak tersedia di workspace yang diperiksa. Catatan aksi adalah screening dokumen dan batas akses, bukan audit raw atau eksperimen aksi baru.",
+    "Locator bukti lokal dalam laporan adalah penunjuk teks relatif repo sumber, bukan tautan snapshot. Dokumen Levinson yang disebut berada pada snapshot anggotanya, bukan allowlist krln.",
+    "Dokumen sumber masih untracked; source_commit_sha hanya mengidentifikasi HEAD. Per-file hashes mengidentifikasi bytes yang disalin.",
+    "Raw trace, path privat, konfigurasi mesin, kredensial dan data held-out tidak dipublikasikan."
   ],
   "source_branch": "main",
   "source_commit_sha": "d9991aad80d46b581150e85dff52f29d9619bce7",
-  "synchronized_at_utc": "2026-11-20T05:28:48Z",
+  "synchronized_at_utc": "2026-11-21T08:13:24Z",
   "protocol_commit": "26ac7bd9bd65abeb5ff672c045f209e602a0af9e",
   "source_commit_note": "source_commit_sha identifies Git HEAD only; per-file hashes and source_git_state show whether each published byte exists in that commit.",
   "files": [
     {
       "path": "research/START_HERE.md",
-      "source_sha256": "a555c46f1e2dad7bf8653e1541bb3be9bb404f44ba289fada063537db549b9b3",
-      "published_sha256": "a555c46f1e2dad7bf8653e1541bb3be9bb404f44ba289fada063537db549b9b3",
+      "source_sha256": "e27a43717ac5ca587f605cf991fdc63a1adc2bbcfea746d4e9fa58f714913d36",
+      "published_sha256": "e27a43717ac5ca587f605cf991fdc63a1adc2bbcfea746d4e9fa58f714913d36",
       "source_git_state": "untracked",
       "source_commit_contains_bytes": false,
       "redactions": {
@@ -36,8 +40,8 @@
     },
     {
       "path": "research/ACTIVE_STATE.md",
-      "source_sha256": "833d77e24972cb5623def07342844d95222666e02d967e61f74e80ccf3782f20",
-      "published_sha256": "833d77e24972cb5623def07342844d95222666e02d967e61f74e80ccf3782f20",
+      "source_sha256": "48281057dd4af2562ff5aed7fa51a86d42d322455df0d30c848eff51fe52069a",
+      "published_sha256": "48281057dd4af2562ff5aed7fa51a86d42d322455df0d30c848eff51fe52069a",
       "source_git_state": "untracked",
       "source_commit_contains_bytes": false,
       "redactions": {
@@ -47,8 +51,8 @@
     },
     {
       "path": "research/STUDY_INDEX.md",
-      "source_sha256": "ffe3754b6e16beb881541357b67c6cdd8ab28ac81f5cd864f44c3ee0b96f8b55",
-      "published_sha256": "ffe3754b6e16beb881541357b67c6cdd8ab28ac81f5cd864f44c3ee0b96f8b55",
+      "source_sha256": "366eb4b6b402a0f201d621f21e91bdef7c03915f89779e98547ed9648eb44113",
+      "published_sha256": "366eb4b6b402a0f201d621f21e91bdef7c03915f89779e98547ed9648eb44113",
       "source_git_state": "untracked",
       "source_commit_contains_bytes": false,
       "redactions": {
@@ -58,8 +62,30 @@
     },
     {
       "path": "research/studies/carlene_two_invoke_context_20261120/REPORT.md",
-      "source_sha256": "7126e57d0fb60a740dacecec07aa847f54f1f1ab28bd2c573895a293cb93b1ca",
-      "published_sha256": "7126e57d0fb60a740dacecec07aa847f54f1f1ab28bd2c573895a293cb93b1ca",
+      "source_sha256": "772bd12a334950a11748101849fbbddd93058758f0ac5e9d354ffb28eb1d8050",
+      "published_sha256": "772bd12a334950a11748101849fbbddd93058758f0ac5e9d354ffb28eb1d8050",
+      "source_git_state": "untracked",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/log_coverage_20261121/SCREENING.md",
+      "source_sha256": "5c34076f7d701fef9c243a4de9b52e2a410704379b125381f106a7911ac547cd",
+      "published_sha256": "5c34076f7d701fef9c243a4de9b52e2a410704379b125381f106a7911ac547cd",
+      "source_git_state": "untracked",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/action_stop_screening_20261121/REPORT.md",
+      "source_sha256": "be4216dbcaa8553dbec17105b627fa723e881285121c43352c65aa9b3ab4aeab",
+      "published_sha256": "be4216dbcaa8553dbec17105b627fa723e881285121c43352c65aa9b3ab4aeab",
       "source_git_state": "untracked",
       "source_commit_contains_bytes": false,
       "redactions": {
