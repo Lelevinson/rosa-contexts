@@ -9,6 +9,7 @@
     "docs/START_HERE.md",
     "research/ACTIVE_STATE.md",
     "research/CONTEXT_DIGEST.md",
+    "research/METHOD_SUMMARY.md",
     "research/PAPER_GOAL_CONTRACT.md",
     "research/RESEARCH_RULES.md",
     "research/ROSA_RESEARCH_CONTEXT.md",
@@ -29,6 +30,7 @@
     "research/decisions/2026-11-17-steady-loop-ablation-protocol.md",
     "research/decisions/2026-11-17-steady-loop-teammate-one-page.md",
     "research/decisions/2026-11-17-test-design-open-questions.md",
+    "research/decisions/2026-11-21-owner-decisions-idea-search.md",
     "research/decisions/README.md",
     "research/literature/PRIOR_ART_MATRIX.md",
     "research/literature/README.md",
@@ -56,6 +58,7 @@
     "research/studies/build_round1_20261115/BUILD_LOG.md",
     "research/studies/build_round1_20261115/PROTOCOL.md",
     "research/studies/build_round1_20261115/REPORT.md",
+    "research/studies/build_round1_20261115/REPORT_TABLES.md",
     "research/studies/build_round2_20261116/BUILD_LOG.md",
     "research/studies/build_round2_20261116/DISCOVERY_FLAKES.md",
     "research/studies/build_round2_20261116/PROTOCOL.md",
@@ -68,6 +71,8 @@
     "research/studies/canonical_render_20261118/PROTOCOL_OFFLINE.md",
     "research/studies/canonical_render_20261118/REPORT_LIVE.md",
     "research/studies/canonical_render_20261118/REPORT_OFFLINE.md",
+    "research/studies/canonical_render_20261118/TABLES.md",
+    "research/studies/canonical_render_20261118/TEMPTATIONS.md",
     "research/studies/capability_discovery_20261110/PROTOCOL.md",
     "research/studies/capability_discovery_20261110/REPORT.md",
     "research/studies/cpaw_prototype_20261110/PROTOCOL.md",
@@ -79,26 +84,35 @@
     "research/studies/cpaw_prototype_20261110/REPORT.md",
     "research/studies/dead_end_lookup_offline_20261118/PROTOCOL.md",
     "research/studies/dead_end_lookup_offline_20261118/REPORT.md",
+    "research/studies/derailment_20261120/PROTOCOL.md",
+    "research/studies/derailment_20261120/REPORT.md",
     "research/studies/design_investigations_20261108_20261110/GLBE_Independent_Critical_Review_2026-11-08.md",
     "research/studies/design_investigations_20261108_20261110/ROSA_Algorithmic_Contribution_Exploration_2026-11-09.md",
     "research/studies/design_investigations_20261108_20261110/ROSA_LLM_Decision_Optimization_Investigation_2026-11-10.md",
     "research/studies/design_investigations_20261108_20261110/ROSA_Mission_B_Code_Grounded_Investigation_2026-11-09.md",
     "research/studies/design_investigations_20261108_20261110/ROSA_Mission_D_Autonomous_Algorithm_Development_2026-11-09.md",
     "research/studies/design_investigations_20261108_20261110/ROSA_Mixed_Graph_Read_Admission_2026-11-10.md",
+    "research/studies/empty_errors_20261120/PROTOCOL.md",
+    "research/studies/empty_errors_20261120/REPORT.md",
+    "research/studies/exam_prep_20261121/REPORT_STAGE1_FREEZE_PREP.md",
     "research/studies/fairness_errors_as_text_20261117/PROTOCOL.md",
     "research/studies/fairness_errors_as_text_20261117/REPORT.md",
+    "research/studies/fairness_errors_as_text_20261117/TABLES.md",
     "research/studies/final_exam_draft_20261118/LAB_GUIDE_FOR_TEAM.md",
     "research/studies/final_exam_draft_20261118/LAB_SETUP_CHECKLIST.md",
     "research/studies/final_exam_draft_20261118/LAB_SETUP_LOG.md",
     "research/studies/final_exam_draft_20261118/NUMBER_RECONCILIATION_20261119.md",
     "research/studies/final_exam_draft_20261118/PROTOCOL_DRAFT.md",
     "research/studies/final_exam_draft_20261118/RUNBOOK.md",
+    "research/studies/final_exam_draft_20261118/freeze_package_20261121/README.md",
+    "research/studies/final_exam_draft_20261118/freeze_package_20261121/SUCCESS_AND_INVALIDATION_DRAFT.md",
     "research/studies/finish_split_20261118/PROTOCOL.md",
     "research/studies/finish_split_20261118/REPORT.md",
     "research/studies/forge_baseline_20261115/INDEPENDENT_CHECK.md",
     "research/studies/forge_baseline_20261115/PROTOCOL_FULL.md",
     "research/studies/forge_baseline_20261115/PROTOCOL_SMOKE.md",
     "research/studies/forge_baseline_20261115/REPORT.md",
+    "research/studies/forge_baseline_20261115/REPORT_THINKING_ON_SMOKE.md",
     "research/studies/forge_baseline_20261115/SAME_CELL_COMPARISON.md",
     "research/studies/gazebo_nav2_model_memory_20261119/REPORT.md",
     "research/studies/gpt_coverage_investigation_20261111/DECISION_LEDGER.md",
@@ -124,6 +138,7 @@
     "research/studies/headroom_diagnostic_20261112/REPORT_STAGE3.md",
     "research/studies/headroom_diagnostic_20261112/REPORT_STAGE3B.md",
     "research/studies/headroom_diagnostic_20261112/REPORT_STAGE3C.md",
+    "research/studies/headroom_diagnostic_20261112/REPORT_STAGE3D.md",
     "research/studies/headroom_diagnostic_20261112/STAGE0_TABLES.md",
     "research/studies/headroom_diagnostic_20261112/STAGE1C_RELABEL.md",
     "research/studies/headroom_diagnostic_20261112/STAGE1C_TABLES.md",
@@ -135,6 +150,16 @@
     "research/studies/headroom_diagnostic_20261112/STAGE3C_TABLES.md",
     "research/studies/headroom_diagnostic_20261112/STAGE3_TABLES.md",
     "research/studies/headroom_diagnostic_20261112/STAGE3_USE_CASES.md",
+    "research/studies/idea_search_20261120/CODEX_PROPOSALS.md",
+    "research/studies/idea_search_20261120/claude_lane/PROTOCOL.md",
+    "research/studies/idea_search_20261120/claude_lane/REPORT.md",
+    "research/studies/independent_check_20261114/README.md",
+    "research/studies/listval_live_20261120/PROTOCOL.md",
+    "research/studies/listval_live_20261120/REPORT.md",
+    "research/studies/loss_map_20261120/CLASSIFIER_NOTES.md",
+    "research/studies/loss_map_20261120/PROTOCOL.md",
+    "research/studies/loss_map_20261120/REPORT.md",
+    "research/studies/name_fix_applied_20261117/AUDIT.md",
     "research/studies/name_fix_applied_20261117/CODEX_INDEPENDENT_REVIEW_20261117.md",
     "research/studies/name_fix_applied_20261117/REPORT.md",
     "research/studies/name_fix_applied_20261117/STATUS.md",
@@ -143,8 +168,13 @@
     "research/studies/native_read_investigation_20261111/REPORT.md",
     "research/studies/offline_replay2_20261116/PROTOCOL.md",
     "research/studies/offline_replay2_20261116/REPORT.md",
+    "research/studies/offline_replay_20261116/PROTOCOL.md",
+    "research/studies/offline_replay_20261116/REPORT.md",
+    "research/studies/offline_replay_20261116/TABLES.md",
     "research/studies/repeat_finish_nudge_20261118/PROTOCOL.md",
     "research/studies/repeat_finish_nudge_20261118/REPORT.md",
+    "research/studies/report_gate_sizing_20261121/PROTOCOL.md",
+    "research/studies/report_gate_sizing_20261121/REPORT.md",
     "research/studies/residual_failures_20261115/FORGE_COMPARISON.md",
     "research/studies/residual_failures_20261115/RESIDUAL_FAILURES.md",
     "research/studies/residual_failures_20261115/WASTE_ANALYSIS.md",
@@ -152,17 +182,25 @@
     "research/studies/residual_failures_20261115/WASTE_BY_CAUSE_RULES.md",
     "research/studies/residual_failures_20261115/WASTE_BY_CAUSE_RULES_V2.md",
     "research/studies/s0_dev_20261116/REPORT.md",
+    "research/studies/s0_dev_20261116/TABLES.md",
+    "research/studies/small_model_harness_20261115/MODEL_CHECK_LLAMA.md",
+    "research/studies/small_model_harness_20261115/PILOT_REPORT.md",
+    "research/studies/snapshot_replay_20261115/REPORT.md",
     "research/studies/stall_hint_v2_20261118/PROTOCOL_STEP1.md",
     "research/studies/stall_hint_v2_20261118/REPORT_STEP1.md",
     "research/studies/steady_loop_ablation_20261117/REPORT.md",
+    "research/studies/steady_loop_ablation_20261117/TABLES.md",
     "research/studies/thinking_escalation_20261119/AMENDMENT_A1.md",
+    "research/studies/thinking_escalation_20261119/AMENDMENT_A2.md",
     "research/studies/thinking_escalation_20261119/FEASIBILITY.md",
     "research/studies/thinking_escalation_20261119/FOLLOWUP_TOKENS_AND_NO_ANSWER_20261119.md",
     "research/studies/thinking_escalation_20261119/NOTE_GPT_OSS_LEVELS_20261119.md",
     "research/studies/thinking_escalation_20261119/PROTOCOL.md",
     "research/studies/thinking_escalation_20261119/REPORT_PART_A.md",
+    "research/studies/thinking_escalation_20261119/REPORT_REPLICATION.md",
     "research/studies/tool_description_compaction_20261117/PROTOCOL.md",
     "research/studies/tool_description_compaction_20261117/REPORT.md",
+    "research/studies/tool_description_compaction_20261117/TABLES.md",
     "research/studies/turtlebot3_nav2_smoke_20261116/REPORT.md",
     "research/studies/write_tail_repeat_20261118/PROTOCOL.md",
     "research/studies/write_tail_repeat_20261118/REPORT.md"
@@ -180,8 +218,8 @@
     "Custodian-only audit notes and candidate-specific held-out opportunity counts are excluded. Team planning and aggregate coverage documents remain available."
   ],
   "source_branch": "research/capability-discovery-20261110",
-  "source_commit_sha": "8ca6309ae95ca0ec477eb3790bde31904525e657",
-  "synchronized_at_utc": "2026-11-19T14:14:38Z",
+  "source_commit_sha": "d2ecfd5be0664b9692442d1c5888338978aa8ec0",
+  "synchronized_at_utc": "2026-11-21T08:10:42Z",
   "protocol_commit": "26ac7bd9bd65abeb5ff672c045f209e602a0af9e",
   "source_commit_note": "source_commit_sha identifies Git HEAD only; per-file hashes and source_git_state show whether each published byte exists in that commit.",
   "files": [
@@ -198,8 +236,8 @@
     },
     {
       "path": "research/ACTIVE_STATE.md",
-      "source_sha256": "7872f867f35817e80b27bdfd3841fbbb3e9150a2cb50f5373495f25820d0e594",
-      "published_sha256": "7872f867f35817e80b27bdfd3841fbbb3e9150a2cb50f5373495f25820d0e594",
+      "source_sha256": "b2c3aea85af44353b8806761a0d4f38d132aa8cb4ad1843ea8f92458d90044a1",
+      "published_sha256": "b2c3aea85af44353b8806761a0d4f38d132aa8cb4ad1843ea8f92458d90044a1",
       "source_git_state": "committed",
       "source_commit_contains_bytes": true,
       "redactions": {
@@ -213,6 +251,17 @@
       "published_sha256": "95d4053e80781a35c52ea03294bfbb837f59e0c64720e3ed6713b6de723ff84b",
       "source_git_state": "ignored",
       "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/METHOD_SUMMARY.md",
+      "source_sha256": "a940361ad5bc2687f67b6c1321839d604b4bda4505ac8091614271d5f80638f3",
+      "published_sha256": "a940361ad5bc2687f67b6c1321839d604b4bda4505ac8091614271d5f80638f3",
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
       "redactions": {
         "local_paths": 0,
         "private_network_addresses": 0
@@ -264,8 +313,8 @@
     },
     {
       "path": "research/STUDY_INDEX.md",
-      "source_sha256": "b553ec3d2a620fc34ac146e1786924b1daeb08f5d901a7b23e495b6ce53ec5b2",
-      "published_sha256": "548e1185b27aa9cee66b12b57568d25d6787216c3232150c489618ec1b917dca",
+      "source_sha256": "9ffcdd38cca6a57841161cea25954f5912b48db6b17e004df4fa9563f384a537",
+      "published_sha256": "d0b6764cfaebd7598dd137dc9da902833e8c30b0b822297ceafe8cd643865684",
       "source_git_state": "committed",
       "source_commit_contains_bytes": true,
       "redactions": {
@@ -431,6 +480,17 @@
       "path": "research/decisions/2026-11-17-test-design-open-questions.md",
       "source_sha256": "9b844c41c1639c1aa3690bd4b3c09224ca9decca29a927b2b6fbaccb7533d8a8",
       "published_sha256": "9b844c41c1639c1aa3690bd4b3c09224ca9decca29a927b2b6fbaccb7533d8a8",
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/decisions/2026-11-21-owner-decisions-idea-search.md",
+      "source_sha256": "618234e477c5158d79562c817f6d15165ead434c201fca60f845c6546a613487",
+      "published_sha256": "618234e477c5158d79562c817f6d15165ead434c201fca60f845c6546a613487",
       "source_git_state": "committed",
       "source_commit_contains_bytes": true,
       "redactions": {
@@ -736,6 +796,17 @@
       }
     },
     {
+      "path": "research/studies/build_round1_20261115/REPORT_TABLES.md",
+      "source_sha256": "297cafd5dc46d49696cb618cfbf205c9acea386c3fe5598d27f0d0683895dd83",
+      "published_sha256": "297cafd5dc46d49696cb618cfbf205c9acea386c3fe5598d27f0d0683895dd83",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
       "path": "research/studies/build_round2_20261116/BUILD_LOG.md",
       "source_sha256": "c8b3123435dc7bf5eaff20f59466e387f5763d20b0766390eaff53557c0dc221",
       "published_sha256": "c8b3123435dc7bf5eaff20f59466e387f5763d20b0766390eaff53557c0dc221",
@@ -868,6 +939,28 @@
       }
     },
     {
+      "path": "research/studies/canonical_render_20261118/TABLES.md",
+      "source_sha256": "dc5e7468caf4875c1b958afba12f49d6447e5863d74ac7a3039c007e0b2b5fe3",
+      "published_sha256": "dc5e7468caf4875c1b958afba12f49d6447e5863d74ac7a3039c007e0b2b5fe3",
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/canonical_render_20261118/TEMPTATIONS.md",
+      "source_sha256": "5fb6bbcb0316a97b38fd8bfcb6808819bef1d71ba31d36e62ef3f4d0418da941",
+      "published_sha256": "5fb6bbcb0316a97b38fd8bfcb6808819bef1d71ba31d36e62ef3f4d0418da941",
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
       "path": "research/studies/capability_discovery_20261110/PROTOCOL.md",
       "source_sha256": "b5e55c88832c4ab0fb8eb6e9806aad718f46dd1bee573ad7920334b8ff3c4b4e",
       "published_sha256": "b5e55c88832c4ab0fb8eb6e9806aad718f46dd1bee573ad7920334b8ff3c4b4e",
@@ -989,6 +1082,28 @@
       }
     },
     {
+      "path": "research/studies/derailment_20261120/PROTOCOL.md",
+      "source_sha256": "3e2763fe87d8f22b2ac41d8a015fdbeec012c161d2024a05f0c9663501b0e21e",
+      "published_sha256": "3e2763fe87d8f22b2ac41d8a015fdbeec012c161d2024a05f0c9663501b0e21e",
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/derailment_20261120/REPORT.md",
+      "source_sha256": "7d7de6c657a0acca43531215ed91151fc39e987fc50803d9c0c503d179af8ed1",
+      "published_sha256": "7d7de6c657a0acca43531215ed91151fc39e987fc50803d9c0c503d179af8ed1",
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
       "path": "research/studies/design_investigations_20261108_20261110/GLBE_Independent_Critical_Review_2026-11-08.md",
       "source_sha256": "d2d0862989520f034a074798024e0fea1e756a4d1c049cdfd664be245975c867",
       "published_sha256": "01a9ac111bb93378a19afbc3bd996311d52b163361d7c48ceeebcc6ad23e7dc3",
@@ -1055,6 +1170,39 @@
       }
     },
     {
+      "path": "research/studies/empty_errors_20261120/PROTOCOL.md",
+      "source_sha256": "daf9e5d2995a6b33762a914a72c071ef78582aede039398284bdb9bcef50161a",
+      "published_sha256": "daf9e5d2995a6b33762a914a72c071ef78582aede039398284bdb9bcef50161a",
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/empty_errors_20261120/REPORT.md",
+      "source_sha256": "7a4da5f231ea7351bfd213abe7b37528eee27737afecc12c884b0267cc3809f9",
+      "published_sha256": "7a4da5f231ea7351bfd213abe7b37528eee27737afecc12c884b0267cc3809f9",
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/exam_prep_20261121/REPORT_STAGE1_FREEZE_PREP.md",
+      "source_sha256": "e6e64278a0a8ca1a22da9185a5c33c071f557998611c37735b6b235484d333b4",
+      "published_sha256": "38ab656d611f67dde7679c0f8cc6b1e7a5555aeea6465afd85bfcb9c339376de",
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
+      "redactions": {
+        "local_paths": 2,
+        "private_network_addresses": 0
+      }
+    },
+    {
       "path": "research/studies/fairness_errors_as_text_20261117/PROTOCOL.md",
       "source_sha256": "97ae760af2f57591165017f600429b7f7eac74364c11007e012940ce886bd9ac",
       "published_sha256": "97ae760af2f57591165017f600429b7f7eac74364c11007e012940ce886bd9ac",
@@ -1077,6 +1225,17 @@
       }
     },
     {
+      "path": "research/studies/fairness_errors_as_text_20261117/TABLES.md",
+      "source_sha256": "2af4438b0b9464529073f62b58dc49deb46a787888736ae26d7eaceb3761aff8",
+      "published_sha256": "2af4438b0b9464529073f62b58dc49deb46a787888736ae26d7eaceb3761aff8",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
       "path": "research/studies/final_exam_draft_20261118/LAB_GUIDE_FOR_TEAM.md",
       "source_sha256": "beb76c0054fb1ddd62ecaa0e8d808ef86c6abf7a84cbe78a1ab5d28aeb660f7e",
       "published_sha256": "beb76c0054fb1ddd62ecaa0e8d808ef86c6abf7a84cbe78a1ab5d28aeb660f7e",
@@ -1089,8 +1248,8 @@
     },
     {
       "path": "research/studies/final_exam_draft_20261118/LAB_SETUP_CHECKLIST.md",
-      "source_sha256": "d598f0f60e0ff5176513ca9a48af0e56f3d82964d695be3ea9ccddb70d3609d1",
-      "published_sha256": "25a5340e754b3d2d3acfd671cef75ac1854aad014c9dd2313e0629b7e9273d1e",
+      "source_sha256": "69fac05d62f30ed925c2d230d7197538da77bab620476aadd79c64b81a6461b5",
+      "published_sha256": "f2f951405a5473b283541f7e6e91dd5cf6c4853025a747799808650c4423136d",
       "source_git_state": "committed",
       "source_commit_contains_bytes": true,
       "redactions": {
@@ -1100,8 +1259,8 @@
     },
     {
       "path": "research/studies/final_exam_draft_20261118/LAB_SETUP_LOG.md",
-      "source_sha256": "a7b96fd5b48d4d977f10effc5f946b62bf952270e70be5eb2b2642b3fc4d14e6",
-      "published_sha256": "4811f68f2176df4917b9f25ebdf21028400ecd47c1c6fc9fc7b7ad3082a97fdb",
+      "source_sha256": "dfcf873166258f42932b47b5c697f9f30f5f662ebb0f40e5677ec11f87cfb762",
+      "published_sha256": "f3f2d860b9b6b6631e1d658f5ee7dbd1b4ea277c7180cf815e72b09f01565515",
       "source_git_state": "committed",
       "source_commit_contains_bytes": true,
       "redactions": {
@@ -1122,8 +1281,8 @@
     },
     {
       "path": "research/studies/final_exam_draft_20261118/PROTOCOL_DRAFT.md",
-      "source_sha256": "f2355637d53750ff443ceb1ea7d219bd56a7e158ce85ca91d125e63157036fca",
-      "published_sha256": "f2355637d53750ff443ceb1ea7d219bd56a7e158ce85ca91d125e63157036fca",
+      "source_sha256": "fd5499c65c0360b747ed189c77a85b9a21a26c002840d6049d436c67ded8f23f",
+      "published_sha256": "fd5499c65c0360b747ed189c77a85b9a21a26c002840d6049d436c67ded8f23f",
       "source_git_state": "committed",
       "source_commit_contains_bytes": true,
       "redactions": {
@@ -1133,12 +1292,34 @@
     },
     {
       "path": "research/studies/final_exam_draft_20261118/RUNBOOK.md",
-      "source_sha256": "943f6d6181337d3b71fe7d3bca477b8868c38cceaf9189f784ef110f5bed3f72",
-      "published_sha256": "6c149bd4a7b02de642c467b95673f31e4c88320d99ebc12709f51719314b4a73",
+      "source_sha256": "9cc780e753581fee46fe0c553836672f584303dea3a2a6623c1533d31f0cdfeb",
+      "published_sha256": "ce5cc4ade4bae2388ab51c460567955db5b47ffc8c786f1bd11d0fd818242649",
       "source_git_state": "committed",
       "source_commit_contains_bytes": true,
       "redactions": {
         "local_paths": 1,
+        "private_network_addresses": 1
+      }
+    },
+    {
+      "path": "research/studies/final_exam_draft_20261118/freeze_package_20261121/README.md",
+      "source_sha256": "6a6060e97c746b1b4cf21829ba242c2d5746f27c7271942597d346b0806d438b",
+      "published_sha256": "6a6060e97c746b1b4cf21829ba242c2d5746f27c7271942597d346b0806d438b",
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/final_exam_draft_20261118/freeze_package_20261121/SUCCESS_AND_INVALIDATION_DRAFT.md",
+      "source_sha256": "2be3c27c1e77635ff3261423a3c14cb5366e2392f74605385234c63d3de65ccc",
+      "published_sha256": "2be3c27c1e77635ff3261423a3c14cb5366e2392f74605385234c63d3de65ccc",
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
+      "redactions": {
+        "local_paths": 0,
         "private_network_addresses": 0
       }
     },
@@ -1205,6 +1386,17 @@
       "source_commit_contains_bytes": false,
       "redactions": {
         "local_paths": 4,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/forge_baseline_20261115/REPORT_THINKING_ON_SMOKE.md",
+      "source_sha256": "5bb3795b34c7203b80a7c64f38383ace9a7e24063997aa71e774675865b9cb2a",
+      "published_sha256": "66c3e509b516dfe92725d260f545f1a6f87b0441441617672ddb90f6e879520e",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 5,
         "private_network_addresses": 0
       }
     },
@@ -1484,6 +1676,17 @@
       }
     },
     {
+      "path": "research/studies/headroom_diagnostic_20261112/REPORT_STAGE3D.md",
+      "source_sha256": "86d2214ac8eb4e12b406c5bbe814a6d7ff6a8bffac4ced6c71a6b76d1930ce42",
+      "published_sha256": "86d2214ac8eb4e12b406c5bbe814a6d7ff6a8bffac4ced6c71a6b76d1930ce42",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
       "path": "research/studies/headroom_diagnostic_20261112/STAGE0_TABLES.md",
       "source_sha256": "ac0b4977d91ac764633002023f12e62c341287c8164c9b3bcadd7deaed2871fc",
       "published_sha256": "ac0b4977d91ac764633002023f12e62c341287c8164c9b3bcadd7deaed2871fc",
@@ -1605,6 +1808,116 @@
       }
     },
     {
+      "path": "research/studies/idea_search_20261120/CODEX_PROPOSALS.md",
+      "source_sha256": "3f5985c211ef505cd72aaf3cb78dc16270a42162a44386e3bf081a760aa009dc",
+      "published_sha256": "3f5985c211ef505cd72aaf3cb78dc16270a42162a44386e3bf081a760aa009dc",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/idea_search_20261120/claude_lane/PROTOCOL.md",
+      "source_sha256": "7c8adb8c045ec8ec1225e6e4b4ba1f86b73aa5339c7f375752cac1e2e5ba79f6",
+      "published_sha256": "7c8adb8c045ec8ec1225e6e4b4ba1f86b73aa5339c7f375752cac1e2e5ba79f6",
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/idea_search_20261120/claude_lane/REPORT.md",
+      "source_sha256": "5b4aea9883db0036879735e81a153f6d9793cf88eb2a643c3d2807d2c1fa3514",
+      "published_sha256": "5b4aea9883db0036879735e81a153f6d9793cf88eb2a643c3d2807d2c1fa3514",
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/independent_check_20261114/README.md",
+      "source_sha256": "8ed1fcb369e4e5381c4a3fe403b2c03c4d4f3464be2da150fb72f56d82b28ad3",
+      "published_sha256": "8ed1fcb369e4e5381c4a3fe403b2c03c4d4f3464be2da150fb72f56d82b28ad3",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/listval_live_20261120/PROTOCOL.md",
+      "source_sha256": "284b52ed027b22f8c83ee316f80bf81918d2fe6c1d533afd24641e932256b90d",
+      "published_sha256": "284b52ed027b22f8c83ee316f80bf81918d2fe6c1d533afd24641e932256b90d",
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/listval_live_20261120/REPORT.md",
+      "source_sha256": "f8d7d031dc35f0612fc7ee5bac3ca25abd7e95e490551dbc72c8f00ff7bc5f16",
+      "published_sha256": "f8d7d031dc35f0612fc7ee5bac3ca25abd7e95e490551dbc72c8f00ff7bc5f16",
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/loss_map_20261120/CLASSIFIER_NOTES.md",
+      "source_sha256": "18a6adb075fadb82a5f57e8ba67c768a553501a97b29ff24c943860b3dbd5353",
+      "published_sha256": "18a6adb075fadb82a5f57e8ba67c768a553501a97b29ff24c943860b3dbd5353",
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/loss_map_20261120/PROTOCOL.md",
+      "source_sha256": "3581c414b692b8789c475d43012b3c9a9e5ca7936b0cd858417c883a1d201fb0",
+      "published_sha256": "3581c414b692b8789c475d43012b3c9a9e5ca7936b0cd858417c883a1d201fb0",
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/loss_map_20261120/REPORT.md",
+      "source_sha256": "ccfb3a65d2edb6f4ea3bd91147655767545fad5839700b830871ad28337432e5",
+      "published_sha256": "ccfb3a65d2edb6f4ea3bd91147655767545fad5839700b830871ad28337432e5",
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/name_fix_applied_20261117/AUDIT.md",
+      "source_sha256": "88ac80d274122bb0b3f406a67b685fb504a4f648c3207057f7e34d6020af72a1",
+      "published_sha256": "88ac80d274122bb0b3f406a67b685fb504a4f648c3207057f7e34d6020af72a1",
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
       "path": "research/studies/name_fix_applied_20261117/CODEX_INDEPENDENT_REVIEW_20261117.md",
       "source_sha256": "c8704e862eb7fde9631fae6a1addd7e2c55b6c587a52e11ac39b3b56d410e508",
       "published_sha256": "c8704e862eb7fde9631fae6a1addd7e2c55b6c587a52e11ac39b3b56d410e508",
@@ -1693,6 +2006,39 @@
       }
     },
     {
+      "path": "research/studies/offline_replay_20261116/PROTOCOL.md",
+      "source_sha256": "4056dc029318c1740fe57d2b9fee37a084f1fbdc9a32b2722f559aa77184bfe7",
+      "published_sha256": "4056dc029318c1740fe57d2b9fee37a084f1fbdc9a32b2722f559aa77184bfe7",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/offline_replay_20261116/REPORT.md",
+      "source_sha256": "145bf534ee858e4e52fa89140eb6ef20426a8a53abb40391a7d413c21aedfdbd",
+      "published_sha256": "145bf534ee858e4e52fa89140eb6ef20426a8a53abb40391a7d413c21aedfdbd",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/offline_replay_20261116/TABLES.md",
+      "source_sha256": "60c9895643c077f5d5b61f7cd1c260063ec0dfbf965ce995c87cab62e6828032",
+      "published_sha256": "60c9895643c077f5d5b61f7cd1c260063ec0dfbf965ce995c87cab62e6828032",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
       "path": "research/studies/repeat_finish_nudge_20261118/PROTOCOL.md",
       "source_sha256": "783b41442a7ed58754ff03a8728b16f7a00ff286a245c89b53041fcbb2029434",
       "published_sha256": "783b41442a7ed58754ff03a8728b16f7a00ff286a245c89b53041fcbb2029434",
@@ -1709,6 +2055,28 @@
       "published_sha256": "5eac10b2eac85d2564e22df85e96ad3bb8fd3bd1b2e49b66101eaf6e1786d77a",
       "source_git_state": "ignored",
       "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/report_gate_sizing_20261121/PROTOCOL.md",
+      "source_sha256": "9b095d3e6ce5a344ad396498183140c10874714e92cbc5e42f1bde9fbd798068",
+      "published_sha256": "9b095d3e6ce5a344ad396498183140c10874714e92cbc5e42f1bde9fbd798068",
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/report_gate_sizing_20261121/REPORT.md",
+      "source_sha256": "25dff1d84481bf3a6995468a784f2bddf75329dbbb76b4772fac2d056bc7af63",
+      "published_sha256": "25dff1d84481bf3a6995468a784f2bddf75329dbbb76b4772fac2d056bc7af63",
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
       "redactions": {
         "local_paths": 0,
         "private_network_addresses": 0
@@ -1792,6 +2160,50 @@
       }
     },
     {
+      "path": "research/studies/s0_dev_20261116/TABLES.md",
+      "source_sha256": "09b97a759ab8e718fba8073b7461cfa5fc0378d38ef0f577949f64a7ea50b179",
+      "published_sha256": "09b97a759ab8e718fba8073b7461cfa5fc0378d38ef0f577949f64a7ea50b179",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/small_model_harness_20261115/MODEL_CHECK_LLAMA.md",
+      "source_sha256": "acbb271c88a13a17c39d6038b6fca6d63e09426c9ce8a81ab58078ca2a60a114",
+      "published_sha256": "acbb271c88a13a17c39d6038b6fca6d63e09426c9ce8a81ab58078ca2a60a114",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/small_model_harness_20261115/PILOT_REPORT.md",
+      "source_sha256": "a0976f040da5328f684ed64e620df6ec31e1760393e47ef9a99899407da56aee",
+      "published_sha256": "a0976f040da5328f684ed64e620df6ec31e1760393e47ef9a99899407da56aee",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/snapshot_replay_20261115/REPORT.md",
+      "source_sha256": "c22b3344a05bdc0a90d8d9f8418dbf256df52a0e8fde3b378c5aacfa4157c257",
+      "published_sha256": "c22b3344a05bdc0a90d8d9f8418dbf256df52a0e8fde3b378c5aacfa4157c257",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
       "path": "research/studies/stall_hint_v2_20261118/PROTOCOL_STEP1.md",
       "source_sha256": "fe09b1877d6754f9d3a99f4298650b5708b563eafc1759c600008b2cd5e3c97e",
       "published_sha256": "fe09b1877d6754f9d3a99f4298650b5708b563eafc1759c600008b2cd5e3c97e",
@@ -1825,11 +2237,33 @@
       }
     },
     {
+      "path": "research/studies/steady_loop_ablation_20261117/TABLES.md",
+      "source_sha256": "aaa35480ea33c68c1e9745f6a560f626d726e6fc28df8c2372bc05a8145ab922",
+      "published_sha256": "aaa35480ea33c68c1e9745f6a560f626d726e6fc28df8c2372bc05a8145ab922",
+      "source_git_state": "ignored",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
       "path": "research/studies/thinking_escalation_20261119/AMENDMENT_A1.md",
       "source_sha256": "72be5bc91c86b231f87b5d55a019fa2fa262e31ab52a2ff0520632a865a44f78",
       "published_sha256": "72be5bc91c86b231f87b5d55a019fa2fa262e31ab52a2ff0520632a865a44f78",
-      "source_git_state": "ignored",
-      "source_commit_contains_bytes": false,
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/thinking_escalation_20261119/AMENDMENT_A2.md",
+      "source_sha256": "8a4ee917e5f46d8b67469f5f87533b2c687ba8ed4ca21150c20b3c32691d28c4",
+      "published_sha256": "8a4ee917e5f46d8b67469f5f87533b2c687ba8ed4ca21150c20b3c32691d28c4",
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
       "redactions": {
         "local_paths": 0,
         "private_network_addresses": 0
@@ -1839,8 +2273,8 @@
       "path": "research/studies/thinking_escalation_20261119/FEASIBILITY.md",
       "source_sha256": "5e85ab48721237557cdd122cd8f32922e5405d4396483971005060fc1156a673",
       "published_sha256": "5e85ab48721237557cdd122cd8f32922e5405d4396483971005060fc1156a673",
-      "source_git_state": "ignored",
-      "source_commit_contains_bytes": false,
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
       "redactions": {
         "local_paths": 0,
         "private_network_addresses": 0
@@ -1850,8 +2284,8 @@
       "path": "research/studies/thinking_escalation_20261119/FOLLOWUP_TOKENS_AND_NO_ANSWER_20261119.md",
       "source_sha256": "20cb982c2ddc29b9f2cfa9e46a8882804fcfab6c8343953619d948d787c78708",
       "published_sha256": "20cb982c2ddc29b9f2cfa9e46a8882804fcfab6c8343953619d948d787c78708",
-      "source_git_state": "ignored",
-      "source_commit_contains_bytes": false,
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
       "redactions": {
         "local_paths": 0,
         "private_network_addresses": 0
@@ -1861,8 +2295,8 @@
       "path": "research/studies/thinking_escalation_20261119/NOTE_GPT_OSS_LEVELS_20261119.md",
       "source_sha256": "fb80e248ba55d78aaba9369a529ad1cdadd9ad9df4dd570afd169fd8c80691d4",
       "published_sha256": "fb80e248ba55d78aaba9369a529ad1cdadd9ad9df4dd570afd169fd8c80691d4",
-      "source_git_state": "ignored",
-      "source_commit_contains_bytes": false,
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
       "redactions": {
         "local_paths": 0,
         "private_network_addresses": 0
@@ -1872,8 +2306,8 @@
       "path": "research/studies/thinking_escalation_20261119/PROTOCOL.md",
       "source_sha256": "0e9fbdf6dc499a61aa1ec1285a8824d240cfd54de26f8b514697cb7e8a9d49a5",
       "published_sha256": "0e9fbdf6dc499a61aa1ec1285a8824d240cfd54de26f8b514697cb7e8a9d49a5",
-      "source_git_state": "ignored",
-      "source_commit_contains_bytes": false,
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
       "redactions": {
         "local_paths": 0,
         "private_network_addresses": 0
@@ -1883,8 +2317,19 @@
       "path": "research/studies/thinking_escalation_20261119/REPORT_PART_A.md",
       "source_sha256": "0ab234063852495e6a5193882f9bd9b37f94690096e228c5f42671a56cf631ba",
       "published_sha256": "0ab234063852495e6a5193882f9bd9b37f94690096e228c5f42671a56cf631ba",
-      "source_git_state": "ignored",
-      "source_commit_contains_bytes": false,
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/thinking_escalation_20261119/REPORT_REPLICATION.md",
+      "source_sha256": "d2f52ec33ddc149158485085b5a2c5ed94f70e70577f470b540a2b75bc8b3498",
+      "published_sha256": "d2f52ec33ddc149158485085b5a2c5ed94f70e70577f470b540a2b75bc8b3498",
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
       "redactions": {
         "local_paths": 0,
         "private_network_addresses": 0
@@ -1905,6 +2350,17 @@
       "path": "research/studies/tool_description_compaction_20261117/REPORT.md",
       "source_sha256": "16e0f8ed8b305ea66d9d0e55541c66a91e3e9452e189123ad39320a6e874a9f2",
       "published_sha256": "16e0f8ed8b305ea66d9d0e55541c66a91e3e9452e189123ad39320a6e874a9f2",
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/tool_description_compaction_20261117/TABLES.md",
+      "source_sha256": "8e11d8e87c29739bb653720b9ab0e9db5bb92b4b2d3b036dbe2a0d468c9fd8ab",
+      "published_sha256": "8e11d8e87c29739bb653720b9ab0e9db5bb92b4b2d3b036dbe2a0d468c9fd8ab",
       "source_git_state": "committed",
       "source_commit_contains_bytes": true,
       "redactions": {
