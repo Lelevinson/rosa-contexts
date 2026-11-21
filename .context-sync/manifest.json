@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "member": "martin",
+  "target_repository": "Lelevinson/rosa-contexts",
+  "source_repository": "Lelevinson/rosa-evaluation",
+  "expected_source_branch": "member/martin-f1",
+  "protocol_version": 1,
+  "include": [
+    "PROJECT_MASTER_README.md",
+    "artifacts/f1-catalogue-wording-20261121/PROTOCOL.md",
+    "artifacts/f1-catalogue-wording-20261121/STAGE0_STATUS.md"
+  ],
+  "important_missing_context": [
+    "'Results at a glance' and the 'Claims ledger' are sections of PROJECT_MASTER_README.md (headings 'Results at a glance (all studies)' and 'Claims ledger (what the report may and may not say)'), not separate files; they are published as part of it. Their generators are tools/master_readme/results_glance.py and claims_ledger.py in rosa-evaluation (code, not published).",
+    "Raw evidence, traces, run artifacts, code and the F1 case files are excluded. Links in these documents point to rosa-evaluation paths that are not in this snapshot.",
+    "F1 is designed, not run: gate G1 (scripted controls on the lab) is blocked by a lab outage; Stage 1 is not authorized. No F1 result exists.",
+    "member/martin-f1 is the source branch because it contains the master README (merged from member/martin) and the F1 study; its commits may not yet be on the GitHub remote."
+  ],
+  "source_branch": "member/martin-f1",
+  "source_commit_sha": "536f9f991d31f62c48b8617c5e58f2e3ca21135d",
+  "synchronized_at_utc": "2026-11-21T03:20:26Z",
+  "protocol_commit": "26ac7bd9bd65abeb5ff672c045f209e602a0af9e",
+  "source_commit_note": "source_commit_sha identifies Git HEAD only; per-file hashes and source_git_state show whether each published byte exists in that commit.",
+  "files": [
+    {
+      "path": "PROJECT_MASTER_README.md",
+      "source_sha256": "9215a3884df43210afac8e07a4c9f331b3887eef3bba55e25c6f0c42e1b0f1d5",
+      "published_sha256": "20cfb69185b888f2687d1dac1ecd97fd58de3ae98b00009d47edb3145f85b27a",
+      "source_git_state": "modified-or-staged",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 3,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "artifacts/f1-catalogue-wording-20261121/PROTOCOL.md",
+      "source_sha256": "7cfdd4ed39f29ecef8846afae2f369c9d6ff3b32d5b9226cc2877361739acff0",
+      "published_sha256": "7cfdd4ed39f29ecef8846afae2f369c9d6ff3b32d5b9226cc2877361739acff0",
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "artifacts/f1-catalogue-wording-20261121/STAGE0_STATUS.md",
+      "source_sha256": "0164b9d8964ec50d611e44a6855562c0f7fd468bd7e638fe78082028515565bc",
+      "published_sha256": "0164b9d8964ec50d611e44a6855562c0f7fd468bd7e638fe78082028515565bc",
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    }
+  ]
+}
