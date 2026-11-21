@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "member": "krln",
+  "target_repository": "Lelevinson/rosa-contexts",
+  "source_repository": "Lelevinson/rosa-research",
+  "expected_source_branch": "main",
+  "protocol_version": 1,
+  "include": [
+    "research/START_HERE.md",
+    "research/ACTIVE_STATE.md",
+    "research/STUDY_INDEX.md",
+    "research/studies/carlene_two_invoke_context_20261120/REPORT.md"
+  ],
+  "important_missing_context": [
+    "This is a reviewed context snapshot, not the runnable research archive. Original protocols, freeze records, source code, dependencies, raw traces and artifacts for all three studies remain local and are excluded.",
+    "Repository-relative evidence paths in the report are plain-text locators for the source owner, not snapshot links. Original studies are not included in this allowlist.",
+    "The source context Markdown is currently untracked. source_commit_sha identifies source HEAD only; per-file hashes identify the copied bytes.",
+    "Machine configuration, endpoints, credentials, private paths and unrelated teammate material are excluded."
+  ],
+  "source_branch": "main",
+  "source_commit_sha": "d9991aad80d46b581150e85dff52f29d9619bce7",
+  "synchronized_at_utc": "2026-11-20T05:28:48Z",
+  "protocol_commit": "26ac7bd9bd65abeb5ff672c045f209e602a0af9e",
+  "source_commit_note": "source_commit_sha identifies Git HEAD only; per-file hashes and source_git_state show whether each published byte exists in that commit.",
+  "files": [
+    {
+      "path": "research/START_HERE.md",
+      "source_sha256": "a555c46f1e2dad7bf8653e1541bb3be9bb404f44ba289fada063537db549b9b3",
+      "published_sha256": "a555c46f1e2dad7bf8653e1541bb3be9bb404f44ba289fada063537db549b9b3",
+      "source_git_state": "untracked",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/ACTIVE_STATE.md",
+      "source_sha256": "833d77e24972cb5623def07342844d95222666e02d967e61f74e80ccf3782f20",
+      "published_sha256": "833d77e24972cb5623def07342844d95222666e02d967e61f74e80ccf3782f20",
+      "source_git_state": "untracked",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/STUDY_INDEX.md",
+      "source_sha256": "ffe3754b6e16beb881541357b67c6cdd8ab28ac81f5cd864f44c3ee0b96f8b55",
+      "published_sha256": "ffe3754b6e16beb881541357b67c6cdd8ab28ac81f5cd864f44c3ee0b96f8b55",
+      "source_git_state": "untracked",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/carlene_two_invoke_context_20261120/REPORT.md",
+      "source_sha256": "7126e57d0fb60a740dacecec07aa847f54f1f1ab28bd2c573895a293cb93b1ca",
+      "published_sha256": "7126e57d0fb60a740dacecec07aa847f54f1f1ab28bd2c573895a293cb93b1ca",
+      "source_git_state": "untracked",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    }
+  ]
+}
