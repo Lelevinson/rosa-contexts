@@ -11,7 +11,7 @@ Written 2026-11-19 (Asia/Taipei) by Levinson's Claude Code session. Status: the 
 ## 2. What is set up, and where
 | what | where / name | notes |
 |---|---|---|
-| Our working folder | `/media/naeem/d1/rosa_exam` | on the big data disk (ext4). **Everything of the exam setup lives here.** |
+| Our working folder | `<LAB_PATH>` | on the big data disk (ext4). **Everything of the exam setup lives here.** |
 | Code and research files | `rosa_exam/repo` | a copy of the research repository (branch `research/capability-discovery-20261110`), copied from the owner's laptop. A hash baseline of these files is kept (section 6). |
 | Docker image | `rosa-exam-jazzy:20261119` (5.2 GB) | ROS 2 Jazzy on Ubuntu 24.04, Gazebo, TurtleBot3, Nav2 (headless, no GUI), turtlesim, `uv`. Built with the latest ROS packages of 2026-11-19, so some versions differ from the laptop's (Nav2 1.3.14 here, 1.3.13 on the laptop). Lab and laptop results are kept as separate groups for this reason. |
 | Docker container | `rosa-exam-main` | the exam's long-running container, host network, ROS domain 220. |
@@ -21,11 +21,11 @@ Written 2026-11-19 (Asia/Taipei) by Levinson's Claude Code session. Status: the 
 | Exam results (later) | `rosa_exam/repo/research/_artifacts/exam/<run name>/` | raw traces and logs. Compact tables are copied back to the laptop. |
 | Notifications | the owner's phone (status-only messages: counts, no research content) | nothing for you to configure. |
 
-Machine facts: Ubuntu 25.04, one NVIDIA RTX 4080 SUPER with **16 GB** of VRAM, 28 CPU cores, 123 GB RAM. **ROS 2 Jazzy does not exist as a normal install on Ubuntu 25.04, so all ROS work happens inside Docker containers.** Disk: `/` (system disk, where Docker keeps images) is nearly full (about 19 GB free). The data disk `/media/naeem/d1` has several hundred GB free. **Never write large things to `/`; never use `/media/naeem/Lab_Project1`.**
+Machine facts: Ubuntu 25.04, one NVIDIA RTX 4080 SUPER with **16 GB** of VRAM, 28 CPU cores, 123 GB RAM. **ROS 2 Jazzy does not exist as a normal install on Ubuntu 25.04, so all ROS work happens inside Docker containers.** Disk: `/` (system disk, where Docker keeps images) is nearly full (about 19 GB free). The data disk `<LAB_PATH>` has several hundred GB free. **Never write large things to `/`; never use `<LAB_PATH>`.**
 
 ## 3. What you must NOT touch
 1. **Container `rosa-exam-main`** and **image `rosa-exam-jazzy:20261119`**: do not stop, remove, restart, `exec` into, rebuild, re-tag or delete them. (Do not start a container with the same name.)
-2. **Folder `/media/naeem/d1/rosa_exam`**: do not edit, move, delete or create files inside it, **except** reading the documents. Do not mount it into your own container (section 4 explains why).
+2. **Folder `<LAB_PATH>`**: do not edit, move, delete or create files inside it, **except** reading the documents. Do not mount it into your own container (section 4 explains why).
 3. **Our Ollama** (tmux session `ollama`, port **11435**, the folder `rosa_exam/ollama-models`): do not stop it, do not pull or delete models in it, do not send requests to it while an exam run is active (it takes GPU time and changes the timing).
 4. **ROS domains 219 and 220** (and the Gazebo partition names starting with `rosa_tb3_`): the exam uses them. Pick another domain for your own work.
 5. **Custodian-only material.** Some files and environment variables are held by the exam custodian. Do not open, search for, list or copy them, whatever you find, and do not ask an AI assistant to look for them.
@@ -38,19 +38,19 @@ Goal: your own ROS/Gazebo environment that cannot disturb the exam, and that the
 
 **Step 1: choose your own names (write them in the team chat so nobody collides):**
 - container name: `<yourname>-<project>` (not `rosa-exam-main`);
-- folder: `/media/naeem/d1/<yourname>_work` (not inside `rosa_exam`);
+- folder: `<LAB_PATH>>_work` (not inside `rosa_exam`);
 - ROS domain: a number from **100 to 199**, **not 219, not 220** (domain 0 is already used by one teammate's container; take a different number and say which). Domains must be unique per person because our containers use the host's network;
 - Ollama port, only if you run your own Ollama: pick a free one with `ss -ltn | grep 114` (11434, 11435 and 11439 are taken; use for example 11440-11459).
 
 **Step 2: start the container (copy, then replace the words in capitals):**
 ```
-mkdir -p /media/naeem/d1/YOURNAME_work/home
+mkdir -p <LAB_PATH>
 docker run -d --name YOURNAME-PROJECT --network host \
   --user "$(id -u):$(id -g)" --cpus 6 --memory 24g --pids-limit 4096 \
-  -e HOME=/media/naeem/d1/YOURNAME_work/home \
+  -e HOME=<LAB_PATH> \
   -e ROS_DOMAIN_ID=YOURDOMAIN -e ROS_LOCALHOST_ONLY=1 -e GZ_PARTITION=YOURNAME \
-  -v /media/naeem/d1/YOURNAME_work:/media/naeem/d1/YOURNAME_work \
-  -w /media/naeem/d1/YOURNAME_work \
+  -v <LAB_PATH> \
+  -w <LAB_PATH> \
   rosa-exam-jazzy:20261119 sleep infinity
 docker exec -it YOURNAME-PROJECT bash -l       # a shell inside it (ROS is already sourced)
 ```
@@ -58,11 +58,11 @@ How to read it: `docker run -d` starts a container in the background; `--name` i
 Tested on 2026-11-19 with a throwaway container: it started as the normal user, saw its own domain, started with an empty ROS graph, wrote only into its own folder, and the exam container and the integrity check were unaffected.
 
 **Rules for your container:**
-- **Do not mount `/media/naeem/d1/rosa_exam`, not even read-only.** Everyone shares one Linux account, so folder permissions do not protect anything inside it. Get the code with your own `git clone` or an `rsync` copy into your own folder.
+- **Do not mount `<LAB_PATH>`, not even read-only.** Everyone shares one Linux account, so folder permissions do not protect anything inside it. Get the code with your own `git clone` or an `rsync` copy into your own folder.
 - Keep `ROS_LOCALHOST_ONLY=1` (it keeps ROS traffic on the machine's loopback, not on the lab network) and your own domain and `GZ_PARTITION`.
 - Do not add packages with `apt` inside the container (it fills `/`). Use `uv` or `pip` with the target in your own folder on the data disk.
 - To stop and remove only **your** container: `docker stop YOURNAME-PROJECT && docker rm YOURNAME-PROJECT` (type the full name).
-- Your own Ollama: use your own models folder (`OLLAMA_MODELS=/media/naeem/d1/YOURNAME_work/models`), your own port (`OLLAMA_HOST=127.0.0.1:YOURPORT`), `OLLAMA_NUM_PARALLEL=1`, `OLLAMA_MAX_LOADED_MODELS=1`, and `OLLAMA_KEEP_ALIVE=0` so a model leaves VRAM right after use. The exam's Ollama must stay untouched. Do not copy models into our models folder.
+- Your own Ollama: use your own models folder (`OLLAMA_MODELS=<LAB_PATH>`), your own port (`OLLAMA_HOST=127.0.0.1:YOURPORT`), `OLLAMA_NUM_PARALLEL=1`, `OLLAMA_MAX_LOADED_MODELS=1`, and `OLLAMA_KEEP_ALIVE=0` so a model leaves VRAM right after use. The exam's Ollama must stay untouched. Do not copy models into our models folder.
 - Untested here: whether Gazebo instances in different containers can see each other. Setting your own `GZ_PARTITION` is the standard protection; if you see foreign Gazebo topics, stop and tell the owner.
 
 ## 5. GPU etiquette (the GPU has 16 GB and is the exam's bottleneck)
@@ -87,7 +87,7 @@ Everything of the exam runs **inside tmux on the lab computer**, so what happens
 | **Foreign ROS or Gazebo processes** | with host networking all containers share the machine's loopback. Two people on the same ROS domain would see each other's topics and corrupt a test. | use your own domain (100-199) and `ROS_LOCALHOST_ONLY=1`. The integrity check lists running containers and ROS-like processes and fails if another container uses domain 219 or 220. If you see ROS nodes you do not know, stop your test and tell the owner. |
 | **Someone changes our files by accident** | the integrity check compares 1,065 files with a recorded hash baseline, the git commit, the image id and size, the model digests, the Ollama version and port, and the folder permissions. It runs read-only. | the owner runs `bash .../lab/check_integrity.sh` before every exam block. If it prints FAIL, **the block does not start** until the cause is understood. |
 
-The integrity script (read-only; it never opens the custodian folder): `bash /media/naeem/d1/rosa_exam/repo/research/studies/final_exam_draft_20261118/lab/check_integrity.sh`. PASS = as recorded, WARN = a human should look (for example somebody else's container is running), FAIL = do not start. You may run it any time.
+The integrity script (read-only; it never opens the custodian folder): `bash <LAB_PATH>/repo/research/studies/final_exam_draft_20261118/lab/check_integrity.sh`. PASS = as recorded, WARN = a human should look (for example somebody else's container is running), FAIL = do not start. You may run it any time.
 
 ## 7. How an exam run works (general workflow)
 1. **Setup (done on 2026-11-19, see `LAB_SETUP_LOG.md`):** image built, container and Ollama running, eight models with the laptop's digests, 28 + 23 unit tests passed in the container, headless Gazebo/Nav2 passed (speed 1.0 real time, a goal in about 8 s), a dummy queue run survived an SSH disconnect.

@@ -1,14 +1,14 @@
 # Lab setup log (2026-11-19, Asia/Taipei)
 
-Executed by Claude Code (Sonnet 5.5) over SSH as `naeem@140.138.155.162` (host name `n`) on behalf of the owner. Each step is done only with its verify result pasted below. The same log is kept on the lab at `/media/naeem/d1/rosa_exam/LAB_SETUP_LOG.md` (copied at the end of each group). Plan: [LAB_SETUP_CHECKLIST.md](LAB_SETUP_CHECKLIST.md). Nothing was run on the held-out custodian files; `research/.local` was never synced.
+Executed by Claude Code (Sonnet 5.5) over SSH as `<LAB_USER>@<LAB_HOST>` (host name `n`) on behalf of the owner. Each step is done only with its verify result pasted below. The same log is kept on the lab at `<LAB_PATH>/LAB_SETUP_LOG.md` (copied at the end of each group). Plan: [LAB_SETUP_CHECKLIST.md](LAB_SETUP_CHECKLIST.md). Nothing was run on the held-out custodian files; `research/.local` was never synced.
 
 ## Step 0, read-only preflight (20:11)
 ```
-user naeem; hostname n; Ubuntu 25.04; kernel 6.14.0-37-generic; 28 cores; RAM 123 GB total, 11 used, 112 available
+user <LAB_USER>; hostname n; Ubuntu 25.04; kernel 6.14.0-37-generic; 28 cores; RAM 123 GB total, 11 used, 112 available
 GPU: NVIDIA GeForce RTX 4080 SUPER, driver 570.195.03, 277 MiB used of 16376 MiB, 0 % utilisation
 GPU compute apps: only /usr/libexec/gnome-remote-desktop-daemon 249 MiB (baseline desktop use)
 docker 29.6.1; running: marvel-rosa-lab-20261117 (marvel-rosa-jazzy:20261117) Up 2 days  (left alone)
-/ : 915G, 23G free (98 % used)     /media/naeem/d1 : 916G, 434G free
+/ : 915G, 23G free (98 % used)     <LAB_PATH> : 916G, 434G free
 tmux 3.6a; python 3.13.3; load average 5.2 / 6.0 / 6.7
 ```
 Verify: matches the checklist (note: the card is an RTX 4080 **SUPER**, 16 GB). GPU idle, so the GPU-sharing precondition holds. Other users' tmux sessions exist (`dfd-hr-*`); not ours, left alone.
@@ -16,12 +16,12 @@ Extra read-only finding (`docker info`): `CDI spec directories: /etc/cdi, /run/c
 
 ## Step 1, our directory on d1 (20:12)
 ```
-filesystem type: ext2/ext3 (= ext4)   chmod round-trip: 600   directories: custodian home logs ollama ollama-models repo uv-cache   custodian mode: 700 naeem
+filesystem type: ext2/ext3 (= ext4)   chmod round-trip: 600   directories: custodian home logs ollama ollama-models repo uv-cache   custodian mode: 700 <LAB_USER>
 ```
 Verify: PASS.
 
 ## Step 2, repository sync (20:12-20:14)
-Command (from the laptop): `rsync -az --exclude '/.git' --exclude '.venv/' --exclude 'research/_artifacts/' --exclude 'research/.local/' ./ naeem@LAB:/media/naeem/d1/rosa_exam/repo/` (1,216 files, 215 MB).
+Command (from the laptop): `rsync -az --exclude '/.git' --exclude '.venv/' --exclude 'research/_artifacts/' --exclude 'research/.local/' ./ <LAB_USER>@LAB:<LAB_PATH>/repo/` (1,216 files, 215 MB).
 **Deviation from the checklist:** the laptop checkout is a Git *worktree* (`.git` is a one-line pointer to `[local path redacted]...`), which would dangle on the lab. The `.git` pointer was therefore excluded; the shared object store (`.git` minus `worktrees`, `index`, `hooks`, `HEAD`, `logs`; 36 MB) was rsynced to `repo/.git`, `HEAD` was written as `ref: refs/heads/research/capability-discovery-20261110`, and `git read-tree HEAD` rebuilt the index. The lab copy has the `origin`/`upstream` remote URLs but no credentials; **do not push from the lab**.
 ```
 branch research/capability-discovery-20261110   HEAD 58a32a5 (laptop: 58a32a5)
@@ -69,7 +69,7 @@ Upstream differences that matter for Gazebo/Nav2: all Nav2 packages 1.3.13 -> 1.
 Teammate isolation (read-only `docker inspect`): network mode `host`; its configuration sets only `ROS_DISTRO=jazzy` (no `ROS_DOMAIN_ID`, no `ROS_LOCALHOST_ONLY`, no ports). Decision rule (host network AND domain 220/219): **not met**, go on. A domain exported interactively inside that container cannot be seen from outside; ours runs in its own bridge namespace with `ROS_LOCALHOST_ONLY=1`.
 ```
 DRY_RUN printed the expected docker run command; container rosa-exam-main started (user 1000:1000, 16 CPUs, 64 GB, image rosa-exam-jazzy:20261119)
-env-check: user 1000:1000 HOME=/media/naeem/d1/rosa_exam/home | ROS_DOMAIN_ID=220 ROS_LOCALHOST_ONLY=1 ROS_DISTRO=jazzy | OLLAMA via http://[private network address]:11435 | uv 0.13.2 | Python 3.12.3 | ros2-ok   PASS
+env-check: user 1000:1000 HOME=<LAB_PATH>/home | ROS_DOMAIN_ID=220 ROS_LOCALHOST_ONLY=1 ROS_DISTRO=jazzy | OLLAMA via http://[private network address]:11435 | uv 0.13.2 | Python 3.12.3 | ros2-ok   PASS
 mounts: repo files listed; custodian mounted; touch there -> "Read-only file system"   PASS
 ros2 node list --no-daemon was not shown separately; the precheck inside stack.py (step 9) confirmed domain 219 empty (the teammate's nodes are not visible)
 Ollama from inside the container: curl http://[private network address]:11435/api/version -> connection timed out after 6 s (host-side curl to the same URL: {"version":"0.40.16"})   FAIL
@@ -101,7 +101,7 @@ Verify: PASS. Speed bar met (RTF 1.0, goal 8.3 s <= 35 s). Caveat: one goal and 
 Not needed (step 9 met its speed bar). Read-only finding from `docker info`: CDI devices `nvidia.com/gpu=0`, `nvidia.com/gpu=GPU-8b60c5ed-...` and `nvidia.com/gpu=all` are already listed (spec dirs `/etc/cdi`, `/run/cdi`), runtimes include `nvidia`. No `nvidia-ctk`, no sudo, no daemon restart was used or is planned.
 
 ## Step 12, queue runner, notifications, SSH-disconnect test (20:49-21:03)
-1. ntfy on the host: `notify.py init` created `[local path redacted]` (mode 600; shared account, status-only topic; **the topic is given to the owner in the chat report, not written here**). `notify.py test finished` -> `{'ntfy': True, 'email': None}` (the ntfy server accepted it). **Arrival on the phone is not verified by me; the owner must subscribe and confirm.** ntfy.sh keeps recent messages, so earlier ones appear after subscribing.
+1. ntfy on the host: `notify.py init` created `<LAB_PATH>` (mode 600; shared account, status-only topic; **the topic is given to the owner in the chat report, not written here**). `notify.py test finished` -> `{'ntfy': True, 'email': None}` (the ntfy server accepted it). **Arrival on the phone is not verified by me; the owner must subscribe and confirm.** ntfy.sh keeps recent messages, so earlier ones appear after subscribing.
 2. `trigger_notifications_once.py`: 7 kinds sent (`finished, crash, no_progress, ollama_down, low_disk, daily, study_failing`), all `monitor exit 0` / `ntfy True`.
 3. Dummy run in the container, monitor on the host. First attempt with the checklist's arguments (`lab all:1`) selected **zero cells** and the queue reported `finished` with `done 0 total 0` (see Open search). Corrected (`lab lab:1`): `tmux ls` showed `exam-lab_dummy`, `done` rose, state `finished`, `done 30 total 30`, monitor sent `finished`, no launcher WARNING. Because an exported `DUMMY_DELAY_SECONDS` does not reach `docker exec`, that run used the 3 s default delay (finished in about 2 minutes).
 4. **SSH-disconnect test** (run `lab_dummy_ssh`, `docker exec -e DUMMY_DELAY_SECONDS=15`): started from a `ssh -tt` session, `done 2` at 20:54:11, the local `ssh` client was ended with `kill -9` (pid 143455); after 185 s on a fresh connection (20:57:26):
@@ -110,7 +110,7 @@ tmux ls -> exam-lab_dummy_ssh: 2 windows        docker ps -> rosa-exam-main Up 3
 status: state running, done 15 of 30 (was 2), heartbeat 0.55 s old
 later: done 30 of 30, state finished, monitor sent "finished" at 21:01:38
 ```
-Verify: PASS. No lingering `loginctl` setting was needed (the tmux server of the `naeem` account already existed from other sessions; a first-session-after-logout case was not separately tested, so **linger is not shown to be unnecessary**).
+Verify: PASS. No lingering `loginctl` setting was needed (the tmux server of the `<LAB_USER>` account already existed from other sessions; a first-session-after-logout case was not separately tested, so **linger is not shown to be unnecessary**).
 Side evidence: the monitor on the host recorded `ollama_down_since` and sent an `ollama_down` notification at 20:56:30 during the run, because it checks the laptop's Ollama address (`[private network address]:11434`): prerequisite 8a (configurable address in `health.py`) is confirmed necessary.
 Cleanup: STOP files, `tmux kill-session` and removal of only `_artifacts/exam/lab_dummy*` and `exam_results/lab_dummy*` done. `merge-check` with the dummy spec printed `logged_on_the_wrong_machine: 30` (it was called without `--machine lab`); not investigated further.
 
@@ -142,9 +142,9 @@ Also well known with tools but below the requested range: `phi4-mini` (3.8 B, 2.
 `notify.py test finished` at about 21:33 -> `{'ntfy': True, 'email': None}` (accepted by the server). Delivery to the phone: **awaiting the owner's confirmation**.
 
 ### Removal of the teammate's container and image (item 1)
-Before: `docker ps -a`: `rosa-exam-main` Up, `marvel-rosa-lab-20261117` Up 2 days (image `marvel-rosa-jazzy:20261117`, id 472fb4307f97, 4.84 GB; network `host`; one bind mount `/media/naeem/d1/marvel proj` -> `/work`). `df /`: 16 GB free (99 % used).
+Before: `docker ps -a`: `rosa-exam-main` Up, `marvel-rosa-lab-20261117` Up 2 days (image `marvel-rosa-jazzy:20261117`, id 472fb4307f97, 4.84 GB; network `host`; one bind mount `<LAB_PATH> proj` -> `/work`). `df /`: 16 GB free (99 % used).
 Commands, only these two names, no prune, no `-v`, no sudo: `docker stop marvel-rosa-lab-20261117 && docker rm marvel-rosa-lab-20261117 && docker rmi marvel-rosa-jazzy:20261117` -> `Untagged: marvel-rosa-jazzy:20261117`, `Deleted: sha256:472fb4307f97...`, rc=0.
-After: `docker ps -a` lists `rosa-exam-main`, `exegol-default` (Exited 3 months ago), `quizzical_rubin` (Exited 4 months ago); images: `rosa-exam-jazzy:20261119`, the two `vsc-chrome-...` images, `nwodtuhs/exegol:free`. **`/` free: 19 GB (98 % used), +3 GB** (the base layers are shared with our image, so only the teammate-only layers were freed). The bind-mounted directory `/media/naeem/d1/marvel proj` was not touched and still exists (not reviewed by me).
+After: `docker ps -a` lists `rosa-exam-main`, `exegol-default` (Exited 3 months ago), `quizzical_rubin` (Exited 4 months ago); images: `rosa-exam-jazzy:20261119`, the two `vsc-chrome-...` images, `nwodtuhs/exegol:free`. **`/` free: 19 GB (98 % used), +3 GB** (the base layers are shared with our image, so only the teammate-only layers were freed). The bind-mounted directory `<LAB_PATH> proj` was not touched and still exists (not reviewed by me).
 
 ### Host networking, Ollama on loopback (item 2)
 Read-only check first: the only ROS-related process on the host was our own `ros2-daemon` on domain 219 (confirmed with `docker top rosa-exam-main`); no `gz sim`, `component_container` or Nav2 processes of other users.
@@ -160,7 +160,7 @@ Step 9 re-run (corrected order, host network): first run `NAVIGATION PASS` in 6.
 Caveats: with host networking our ROS processes share the host loopback with any other ROS user of the host (`ROS_LOCALHOST_ONLY=1` keeps them off the network); the check above shows nobody was running ROS at that moment, not that nobody will.
 
 ### Extra-model candidates (item 4): pull, digest, tools, load at num_ctx 65536
-Models: the four that passed the 2026-11-15/16 interface check; excluded with recorded reasons: nemotron-3-nano:4b (no tool calls), phi-4-mini (needs template modification) (from the owner's instruction; I did not open `MODEL_CHECK*.md`). GPU preflight: 277 MiB used, 0 %, only the desktop daemon. All four pulled in about 4 minutes (`logs/pull_candidates.log`). Test script `candidate_check.py` (standard library; **no task, no prompt**: loading by an empty `/api/generate` request with `options.num_ctx=65536`, `keep_alive` 5 m; then `/api/ps`; then `keep_alive` 0). Raw output: `/media/naeem/d1/rosa_exam/logs/candidate_check.jsonl`. Lab Ollama settings: `NUM_PARALLEL=1`, `MAX_LOADED_MODELS=1`, no flash-attention or KV-cache-type variable set; the laptop's Ollama settings were not compared.
+Models: the four that passed the 2026-11-15/16 interface check; excluded with recorded reasons: nemotron-3-nano:4b (no tool calls), phi-4-mini (needs template modification) (from the owner's instruction; I did not open `MODEL_CHECK*.md`). GPU preflight: 277 MiB used, 0 %, only the desktop daemon. All four pulled in about 4 minutes (`logs/pull_candidates.log`). Test script `candidate_check.py` (standard library; **no task, no prompt**: loading by an empty `/api/generate` request with `options.num_ctx=65536`, `keep_alive` 5 m; then `/api/ps`; then `keep_alive` 0). Raw output: `<LAB_PATH>/logs/candidate_check.jsonl`. Lab Ollama settings: `NUM_PARALLEL=1`, `MAX_LOADED_MODELS=1`, no flash-attention or KV-cache-type variable set; the laptop's Ollama settings were not compared.
 | model | digest = laptop | `ollama show` capabilities | params, quant | file | at num_ctx 65536: `size` / `size_vram` (GiB) | fully resident | nvidia-smi used (MiB, incl. 277 baseline) |
 |---|---|---|---|---|---|---|---|
 | `llama3.1:8b` | yes (46e0c10c039e) | completion, tools | 8.0B Q4_K_M | 4.92 GB | 12.48 / 12.48 | **yes** | 13342 |
@@ -172,7 +172,7 @@ All four unloaded (`/api/ps` empty after `keep_alive` 0; nvidia-smi back to 277 
 ## Group 3 (22:00-22:15, 2026-11-19): integrity check and team guide
 ### Findings of the first manual look (read-only), before the script
 - Our container `rosa-exam-main`: Up, image id `sha256:306205ffce29...` = the id logged after the build; host network; started 21:36 (my recreation). Image size 5.2GB (docker image ls; `docker image inspect` reports 1,120,156,078 bytes of compressed content, not comparable).
-- **A new container `marvel-g1-extension-20261119` is running from OUR image id** (started 21:45, about 10 minutes after item 1 above): a teammate's own container; host network, user 1000:1000, `ROS_DOMAIN_ID=0`, `ROS_LOCALHOST_ONLY=1`, no CPU or memory cap, one bind mount `/media/naeem/d1/marvel proj` -> `/work`, running a Python job (G1 review work). Not on domain 219/220. Not touched.
+- **A new container `<OTHER_CONTAINER>` is running from OUR image id** (started 21:45, about 10 minutes after item 1 above): a teammate's own container; host network, user 1000:1000, `ROS_DOMAIN_ID=0`, `ROS_LOCALHOST_ONLY=1`, no CPU or memory cap, one bind mount `<LAB_PATH> proj` -> `/work`, running a Python job (G1 review work). Not on domain 219/220. Not touched.
 - **A second Ollama server, `127.0.0.1:11439`**, started 2026-11-17 under the same account (not ours). Port 11435 has only our Ollama (pid 3197368, our binary).
 - Laptop HEAD is `95a658e`, one commit ahead of the lab's `58a32a5`; that commit only adds `exam_results/thinking_replA2/compact_all.jsonl` (228 lines). Lab and laptop tracked code are identical; the lab is simply behind on that results file.
 - Only ROS-like process on the host outside our container before the check: none (the `ros2-daemon` seen earlier belongs to our container).
@@ -185,12 +185,12 @@ PASS container running from the expected image id; host network; ROS 220/localho
 PASS git HEAD 58a32a5; tracked files clean; 1065 manifest files with recorded hash; no file outside the manifest; no research/.local
 PASS Ollama {"version":"0.40.16"}; port 11435 only on 127.0.0.1; listener is our binary; all 8 model digests unchanged
 PASS no ROS/Gazebo process outside the containers or inside the other container; folder modes/owners as recorded; / 19 GB free; d1 386 GB free; no GPU process >= 1 GiB (GPU 277 MiB, 0 %)
-WARN other Ollama server on 127.0.0.1:11439 (teammate's)       WARN other running container marvel-g1-extension-20261119 (domain 0)
-changed since 21:44 (all by user naeem; the account is shared, so no finer attribution): LAB_SETUP_CHECKLIST.md and LAB_SETUP_LOG.md (21:45, my rsync), check_integrity.sh and the three baseline files in integrity/ (22:05, this step); model store: 0 files changed; custodian folder itself: last change 20:11 (step 1).
+WARN other Ollama server on 127.0.0.1:11439 (teammate's)       WARN other running container <OTHER_CONTAINER> (domain 0)
+changed since 21:44 (all by user <LAB_USER>; the account is shared, so no finer attribution): LAB_SETUP_CHECKLIST.md and LAB_SETUP_LOG.md (21:45, my rsync), check_integrity.sh and the three baseline files in integrity/ (22:05, this step); model store: 0 files changed; custodian folder itself: last change 20:11 (step 1).
 ```
 The manifest PASS above is self-consistent only (recorded minutes earlier), so I also hashed the same 1,065 files on the laptop: **1065 identical, 0 differ, 0 missing**. `d1` free space fell from 408 to 386 GB: consistent with my 23 GB of candidate models.
 ### Guide
-`LAB_GUIDE_FOR_TEAM.md` (copied to `/media/naeem/d1/rosa_exam/README_TEAM.md`). The own-container recipe was tested with a throwaway container (`--rm`, own folder `rosa_exam/guide_test_tmp`, domain 150): started as uid 1000, correct HOME and domain, empty ROS graph, wrote only to its own folder; removed afterwards (folder deleted, `docker ps` shows only the two existing containers, integrity check 0 FAIL after). Not tested: Gazebo instances of two containers on the host network seeing each other (guide says so).
+`LAB_GUIDE_FOR_TEAM.md` (copied to `<LAB_PATH>/README_TEAM.md`). The own-container recipe was tested with a throwaway container (`--rm`, own folder `rosa_exam/guide_test_tmp`, domain 150): started as uid 1000, correct HOME and domain, empty ROS graph, wrote only to its own folder; removed afterwards (folder deleted, `docker ps` shows only the two existing containers, integrity check 0 FAIL after). Not tested: Gazebo instances of two containers on the host network seeing each other (guide says so).
 ## Open search (group 3)
 - The shared account means the checks cannot tell people apart and the baseline files themselves are writable by anyone using it; the guide relies on rules, not on enforcement.
 - The teammate's container has no CPU or memory cap and runs on the host network; if it starts ROS on domain 219/220 the integrity check will FAIL (it checks configuration, not later `export`s inside the container, so a domain set after start is only caught through the visible ROS processes, which are not attributed to domains).
