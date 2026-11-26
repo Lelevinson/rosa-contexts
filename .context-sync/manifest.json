@@ -251,8 +251,8 @@
     "Lab account name, lab host address, lab paths and another student's container name are replaced by placeholders (<LAB_USER>, <LAB_HOST>, <LAB_PATH>, <OTHER_CONTAINER>) in the published copies. The held-out structural reports (research/studies/custodian_stage1_20261121, research/studies/publication_prep_20261121) and the roughly 116 older, never-curated Markdown files (historical archives and study inputs) are not published."
   ],
   "source_branch": "research/capability-discovery-20261110",
-  "source_commit_sha": "ec23ee89f61d898712796079a31fe16fbb674c98",
-  "synchronized_at_utc": "2026-11-24T02:37:56Z",
+  "source_commit_sha": "5d4a92115d5573efb9d01a93b23f769397bfae7d",
+  "synchronized_at_utc": "2026-11-26T22:01:08Z",
   "protocol_commit": "26ac7bd9bd65abeb5ff672c045f209e602a0af9e",
   "source_commit_note": "source_commit_sha identifies Git HEAD only; per-file hashes and source_git_state show whether each published byte exists in that commit.",
   "files": [
@@ -269,12 +269,12 @@
     },
     {
       "path": "research/ACTIVE_STATE.md",
-      "source_sha256": "3979f0bdeff554cfc94ba4c2db3433bb8b3eabeb3db6f3918b7748a50f72079e",
-      "published_sha256": "3979f0bdeff554cfc94ba4c2db3433bb8b3eabeb3db6f3918b7748a50f72079e",
-      "source_git_state": "committed",
-      "source_commit_contains_bytes": true,
+      "source_sha256": "ffb2f694a642b3c14cede7555be042c6ff21a75d1c3a171c9eaf2411e657795f",
+      "published_sha256": "b763b781b82508e401628219d7aa856d77132db42a12bb766c3c6a1ae182a257",
+      "source_git_state": "modified-or-staged",
+      "source_commit_contains_bytes": false,
       "redactions": {
-        "local_paths": 0,
+        "local_paths": 1,
         "private_network_addresses": 0
       }
     },
@@ -335,8 +335,8 @@
     },
     {
       "path": "research/START_HERE.md",
-      "source_sha256": "f50611e3e60378233aa758189a232bd5bd0a05c36bc748f057a136eb9f21276d",
-      "published_sha256": "f50611e3e60378233aa758189a232bd5bd0a05c36bc748f057a136eb9f21276d",
+      "source_sha256": "6815c187a189c4a0f176b8199e4606ba3c172f5b97de93bc51917ab526eb4d14",
+      "published_sha256": "6815c187a189c4a0f176b8199e4606ba3c172f5b97de93bc51917ab526eb4d14",
       "source_git_state": "committed",
       "source_commit_contains_bytes": true,
       "redactions": {
@@ -555,8 +555,8 @@
     },
     {
       "path": "research/decisions/README.md",
-      "source_sha256": "6014e0e41c447f9df09207d403a760bcca8163858fc76b19fe11bc8fd3239ca1",
-      "published_sha256": "6014e0e41c447f9df09207d403a760bcca8163858fc76b19fe11bc8fd3239ca1",
+      "source_sha256": "d7b8964e1a205b5251c435c7984f9aef240c556a2b229b3e95994ef0acc854ec",
+      "published_sha256": "d7b8964e1a205b5251c435c7984f9aef240c556a2b229b3e95994ef0acc854ec",
       "source_git_state": "committed",
       "source_commit_contains_bytes": true,
       "redactions": {
@@ -1461,10 +1461,10 @@
     },
     {
       "path": "research/studies/final_exam_draft_20261118/LAB_LAUNCH_RECORD_20261123.md",
-      "source_sha256": "724db86807bb3b493689b32ef69304a85dacb6185280dd805454ac427fa7c2e1",
-      "published_sha256": "53e1bacfc9952134034fbc4de64b2272cf4f197421edf197e1379103bf268f16",
-      "source_git_state": "committed",
-      "source_commit_contains_bytes": true,
+      "source_sha256": "bf7a0c159a6fb8af1739532d264d2fd06ea5f8df712ba48c3e645951e809dd06",
+      "published_sha256": "ad99265f5a0f1ee57f3523a4c278abdb7ebd6f1962f08cbad868ea2b327e8e86",
+      "source_git_state": "modified-or-staged",
+      "source_commit_contains_bytes": false,
       "redactions": {
         "local_paths": 0,
         "private_network_addresses": 0,
@@ -2529,8 +2529,8 @@
     },
     {
       "path": "research/studies/stage2_protocol_20261124/PROTOCOL_STAGE2_DRAFT.md",
-      "source_sha256": "e15ce2b2dd0765635655327a9cb0d779391f5bbfdf5a62854c3589bacaeb70cc",
-      "published_sha256": "e15ce2b2dd0765635655327a9cb0d779391f5bbfdf5a62854c3589bacaeb70cc",
+      "source_sha256": "d572cc9324e39e41214254e629d11b65f767251a94087a5369ad4a9154bd76c5",
+      "published_sha256": "d572cc9324e39e41214254e629d11b65f767251a94087a5369ad4a9154bd76c5",
       "source_git_state": "committed",
       "source_commit_contains_bytes": true,
       "redactions": {
@@ -2540,8 +2540,8 @@
     },
     {
       "path": "research/studies/stage2_protocol_20261124/RUNBOOK_TIMING_LIVE_CHECK_FREEZE.md",
-      "source_sha256": "2a2877325b083075bb6ab95a5b7f07b901d9ab2ade01a0a27d9d70e3e9eb0fd2",
-      "published_sha256": "1331444de7d678e7a113bf12e131510e3196fc947aae1c34d7ee28413eb37a62",
+      "source_sha256": "d6163516b92631c2b26423842d4e6c6059fbe5a4a1eea460bcb82979da675ca3",
+      "published_sha256": "471cbc65b67f09f3aa5602a88dbae04a02bd497e5f07139f1d3805717a97bbf5",
       "source_git_state": "committed",
       "source_commit_contains_bytes": true,
       "redactions": {

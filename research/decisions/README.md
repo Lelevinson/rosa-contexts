@@ -2,6 +2,7 @@
 
 These are dated pointers to preserved original decisions. A decision records evidence and scope; it is not eternal scientific authority. Revisions should add a dated record that links the earlier record, describes the reason and evidence for the change, and leaves historical records intact. Check [study index](../STUDY_INDEX.md) for code and evidence.
 
+- [2026-11-26 paper status and method name (ROSA-Lite)](2026-11-26-paper-and-method-name.md).
 - [2026-11-24 owner decisions on the exam, the poster and the paper](2026-11-24-owner-decisions-exam-and-poster.md); [2026-11-23 quarantined cells](2026-11-23-stage1-quarantined-cells.md).
 - [2026-11-12 knowledge migration](2026-11-12-knowledge-migration.md).
 - [2026-11-15 scorer v2.0 (frozen)](2026-11-15-scorer-v2.md).

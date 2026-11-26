@@ -7,6 +7,7 @@ For any task, read applicable [agent instructions](../AGENTS.md) and [active sta
 - **Software:** relevant source, tests and coding conventions; use [codebase guide](../docs/START_HERE.md) when useful.
 - **Historical investigation:** locate the particular study in [study index](STUDY_INDEX.md), then read its relevant decisions, report, protocol and original evidence as needed. Reports are not raw evidence.
 - **Literature:** start with [taxonomy](literature/README.md) and [prior-art matrix](literature/PRIOR_ART_MATRIX.md), then inspect only the relevant original sources and paper notes.
+- **Paper and poster:** read the [paper status and method name decision](decisions/2026-11-26-paper-and-method-name.md) (the paper lives outside this repository; results enter it only through committed look reports) and the [paper goal contract](PAPER_GOAL_CONTRACT.md).
 - **Evaluation:** load [research rules](RESEARCH_RULES.md), the applicable protocol, comparators, implementation and evidence; a previous proposed run is not authorization.
 
 ## Level 3: research proposals, substantial decisions, implementations and experiments

@@ -31,3 +31,9 @@ Skipped 0, contended 0, quarantined none, Ollama ok, disk 392.4 GB free. `gpu_us
 ## Laptop (counts only, 2026-11-23 22:38)
 
 Running, tier 1, 1162 / 1824 tier 1 cells done (1162 / 7752 overall), 16 skipped, 0 contended, block 43, disk 989.5 GB free, heartbeat 18 s. Infra share is not available from the status view. Alerts: the laptop `notify.log` records a `crash` send at 2026-11-23 20:42:21, although the run still shows `running` with a fresh heartbeat. Cause not investigated.
+
+## Incident on 2026-11-26, 12:29–14:09 Asia/Taipei
+
+- The host package log records Docker 29.6.1 to 29.10.1 and containerd 2.2.5 to 2.4.2 upgrades at 12:29. The service journal records containerd starting at 12:29:37, and Docker stopping and starting at 12:29:38. Docker inspection places both exam containers' exits at 12:29:38.
+- The existing Stage 1 container started again at 13:41:06 with the same image, host networking and init enabled. The Stage 1 runner's status records its new start at 14:09:22, about 1 hour 40 minutes after the interruption. The Stage 2 container remained stopped at inspection.
+- The Ollama listener's process start was November 23 at 20:30:58. It served version 0.40.17. The lab verifier matched the local verifier's SHA-256 and exited 0 against the running server. All frozen files and all seven pinned model digests verified. Checks used the package and service journal, container metadata, read-only Ollama metadata and counts-only queue status.
