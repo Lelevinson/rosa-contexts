@@ -235,7 +235,10 @@
     "research/teammates_20261121/martin_branches/martin-gazebo.md",
     "research/teammates_20261121/martin_branches/martin-merge.md",
     "research/teammates_20261121/martin_branches/martin-parity.md",
-    "research/teammates_20261121/martin_branches/martin.md"
+    "research/teammates_20261121/martin_branches/martin.md",
+    "research/studies/stage3_nav2_20261124/STAGE3_REAL_RUN_RESULTS.md",
+    "research/studies/verification_20261127/REPORT.md",
+    "research/studies/verification_20261127/RESOLUTION.md"
   ],
   "important_missing_context": [
     "research/.local/WORKSPACE_MAP.md is machine-specific and excluded.",
@@ -251,8 +254,8 @@
     "Lab account name, lab host address, lab paths and another student's container name are replaced by placeholders (<LAB_USER>, <LAB_HOST>, <LAB_PATH>, <OTHER_CONTAINER>) in the published copies. The held-out structural reports (research/studies/custodian_stage1_20261121, research/studies/publication_prep_20261121) and the roughly 116 older, never-curated Markdown files (historical archives and study inputs) are not published."
   ],
   "source_branch": "research/capability-discovery-20261110",
-  "source_commit_sha": "5d4a92115d5573efb9d01a93b23f769397bfae7d",
-  "synchronized_at_utc": "2026-11-26T22:01:08Z",
+  "source_commit_sha": "170aa2dba3578f73171c528bdd7ad9d8b5b8c515",
+  "synchronized_at_utc": "2026-11-28T13:11:51Z",
   "protocol_commit": "26ac7bd9bd65abeb5ff672c045f209e602a0af9e",
   "source_commit_note": "source_commit_sha identifies Git HEAD only; per-file hashes and source_git_state show whether each published byte exists in that commit.",
   "files": [
@@ -271,8 +274,8 @@
       "path": "research/ACTIVE_STATE.md",
       "source_sha256": "ffb2f694a642b3c14cede7555be042c6ff21a75d1c3a171c9eaf2411e657795f",
       "published_sha256": "b763b781b82508e401628219d7aa856d77132db42a12bb766c3c6a1ae182a257",
-      "source_git_state": "modified-or-staged",
-      "source_commit_contains_bytes": false,
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
       "redactions": {
         "local_paths": 1,
         "private_network_addresses": 0
@@ -1463,8 +1466,8 @@
       "path": "research/studies/final_exam_draft_20261118/LAB_LAUNCH_RECORD_20261123.md",
       "source_sha256": "bf7a0c159a6fb8af1739532d264d2fd06ea5f8df712ba48c3e645951e809dd06",
       "published_sha256": "ad99265f5a0f1ee57f3523a4c278abdb7ebd6f1962f08cbad868ea2b327e8e86",
-      "source_git_state": "modified-or-staged",
-      "source_commit_contains_bytes": false,
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
       "redactions": {
         "local_paths": 0,
         "private_network_addresses": 0,
@@ -2798,6 +2801,39 @@
       "path": "research/teammates_20261121/martin_branches/martin.md",
       "source_sha256": "c4a461083079777222f58e82c6897c01cdd9549a499dce4f449b997861f08e09",
       "published_sha256": "c4a461083079777222f58e82c6897c01cdd9549a499dce4f449b997861f08e09",
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/stage3_nav2_20261124/STAGE3_REAL_RUN_RESULTS.md",
+      "source_sha256": "bbf448e90af8585b03ceff47f887d32935042ca65d0b924719b377a548e657ab",
+      "published_sha256": "bbf448e90af8585b03ceff47f887d32935042ca65d0b924719b377a548e657ab",
+      "source_git_state": "untracked",
+      "source_commit_contains_bytes": false,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/verification_20261127/REPORT.md",
+      "source_sha256": "b1dd7f28cdeb0236a8d0db614c9e889a1a8e9173566add132d255ce7930f673b",
+      "published_sha256": "b1dd7f28cdeb0236a8d0db614c9e889a1a8e9173566add132d255ce7930f673b",
+      "source_git_state": "committed",
+      "source_commit_contains_bytes": true,
+      "redactions": {
+        "local_paths": 0,
+        "private_network_addresses": 0
+      }
+    },
+    {
+      "path": "research/studies/verification_20261127/RESOLUTION.md",
+      "source_sha256": "87082bc324c028cbc82e534ed2fd007da1ba3662ee93646bf526f69bb4adf283",
+      "published_sha256": "87082bc324c028cbc82e534ed2fd007da1ba3662ee93646bf526f69bb4adf283",
       "source_git_state": "committed",
       "source_commit_contains_bytes": true,
       "redactions": {
